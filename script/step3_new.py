@@ -6,7 +6,17 @@ import time
 import os
 
 # 设置DashScope API密钥 (替换为你的实际API_KEY)
-dashscope.api_key = os.getenv("DASHSCOPE_API_KEY", "sk-your-api-key-here")
+dashscope.api_key = os.getenv("DASHSCOPE_API_KEY")
+
+# Kimi-K2.5 需要使用的 API 端点
+KIMI_BASE_URL = 'https://dashscope.aliyuncs.com/api/v1'
+
+# 需要使用 MultiModalConversation 调用的模型列表
+MULTIMODAL_MODELS = ["kimi-k2.5"]
+
+# 获取脚本所在目录的绝对路径
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
 
 # 定义不同语言的提示词模板
 PROMPTS = {
@@ -44,32 +54,72 @@ def generate_joke(headline, lang, modelname="qwen-max"):
     max_retries = 3
     retry_delay = 1  # 重试间隔(秒)
     
+    # 判断是否为多模态模型（如 kimi-k2.5）
+    is_multimodal = modelname in MULTIMODAL_MODELS
+    
     for attempt in range(max_retries):
         try:
-            # 调用API
-            response = Generation.call(
-                model=modelname,
-                messages=[{"role": "user", "content": prompt}],
-                extra_body={"enable_thinking": True},
-                result_format="message",
-                temperature=0.85,
-                top_p=0.9
-            )
-            
-            # 解析API响应
-            if response.status_code == 200:
-                content = response.output.choices[0].message.content
-                # 直接返回生成的笑话内容（已经是纯文本）
-                return content.strip()
-            else:
-                # API调用失败
-                if attempt < max_retries - 1:
-                    print(f"API调用失败 (尝试 {attempt + 1}/{max_retries}): {response.code}")
-                    time.sleep(retry_delay)
-                    continue
+            if is_multimodal:
+                # Kimi-K2.5 等多模态模型使用 MultiModalConversation.call()
+                # 设置对应的 API 端点
+                original_base_url = getattr(dashscope, 'base_http_api_url', None)
+                dashscope.base_http_api_url = KIMI_BASE_URL
+                
+                messages = [{
+                    "role": "user",
+                    "content": [{"text": prompt}]
+                }]
+                
+                response = dashscope.MultiModalConversation.call(
+                    api_key=dashscope.api_key,
+                    model=modelname,
+                    messages=messages,
+                    extra_body={"enable_thinking": True},
+                    temperature=0.85,
+                    top_p=0.9
+                )
+                
+                # 恢复原始 base_url
+                if original_base_url:
+                    dashscope.base_http_api_url = original_base_url
+                
+                # 解析API响应
+                if response.status_code == 200:
+                    # 多模态模型返回格式: content[0]["text"]
+                    content = response.output.choices[0].message.content[0]["text"]
+                    return content.strip()
                 else:
-                    # 所有重试都失败
-                    return {"error": True, "message": f"API调用失败: {response.code} - {response.message}"}
+                    if attempt < max_retries - 1:
+                        print(f"API调用失败 (尝试 {attempt + 1}/{max_retries}): {response.code}")
+                        time.sleep(retry_delay)
+                        continue
+                    else:
+                        return {"error": True, "message": f"API调用失败: {response.code} - {response.message}"}
+            else:
+                # 其他模型使用 Generation.call()
+                response = Generation.call(
+                    model=modelname,
+                    messages=[{"role": "user", "content": prompt}],
+                    extra_body={"enable_thinking": True},
+                    result_format="message",
+                    temperature=0.85,
+                    top_p=0.9
+                )
+                
+                # 解析API响应
+                if response.status_code == 200:
+                    content = response.output.choices[0].message.content
+                    # 直接返回生成的笑话内容（已经是纯文本）
+                    return content.strip()
+                else:
+                    # API调用失败
+                    if attempt < max_retries - 1:
+                        print(f"API调用失败 (尝试 {attempt + 1}/{max_retries}): {response.code}")
+                        time.sleep(retry_delay)
+                        continue
+                    else:
+                        # 所有重试都失败
+                        return {"error": True, "message": f"API调用失败: {response.code} - {response.message}"}
                 
         except Exception as e:
             # 捕获其他异常
@@ -156,17 +206,26 @@ def process_headlines(input_file, output_file, lang, modelname="qwen-max", resum
     
     print(f"成功处理 {len(processed_data)} 条数据，错误 {error_count} 条，保存到 {output_file}")
 
-def joke_gen_all(modelname="qwen-max", output_dir="../output"):
+def joke_gen_all(modelname="qwen-max", output_dir=None):
     """
     处理所有语言的新闻标题
     :param modelname: 使用的模型名称
     :param output_dir: 输出目录
     """
+    # 使用基于项目根目录的绝对路径
+    if output_dir is None:
+        output_dir = os.path.join(PROJECT_ROOT, "output")
+    
+    # 确保输出目录存在
+    os.makedirs(output_dir, exist_ok=True)
+    
+    data_dir = os.path.join(PROJECT_ROOT, "data")
+    
     # 定义输入输出文件
     files = [
-        ("../data/headlines_en.json", f"{output_dir}/step3_new_{modelname}_en.json", "en"),
-        ("../data/headlines_es.json", f"{output_dir}/step3_new_{modelname}_es.json", "es"),
-        ("../data/headlines_zh.json", f"{output_dir}/step3_new_{modelname}_zh.json", "zh"),
+        (os.path.join(data_dir, "headlines_en.json"), os.path.join(output_dir, f"step3_new_{modelname}_en.json"), "en"),
+        (os.path.join(data_dir, "headlines_es.json"), os.path.join(output_dir, f"step3_new_{modelname}_es.json"), "es"),
+        (os.path.join(data_dir, "headlines_zh.json"), os.path.join(output_dir, f"step3_new_{modelname}_zh.json"), "zh"),
     ]
     
     for input_file, output_file, lang in files:
@@ -177,10 +236,16 @@ if __name__ == "__main__":
     # 可以单独处理某一语言
     # process_headlines("../data/headlines_en.json", "../output/step3_new_qwen-max_en.json", "en", "qwen-max")
     
+    # Kimi-K2.5 多模态模型（使用 MultiModalConversation 调用）
+    #joke_gen_all(modelname="kimi-k2.5")
+
     # 或者处理所有语言
-    joke_gen_all(modelname="qwen3-max")
+    #joke_gen_all(modelname="qwen3-max")
     
     # 也可以使用其他模型
-    # joke_gen_all(modelname="deepseek-v3.2")
-    # joke_gen_all(modelname="kimi-k2-thinking")
-    # joke_gen_all(modelname="glm-4.7")
+    #joke_gen_all(modelname="deepseek-v3.2")
+    joke_gen_all(modelname="glm-5")
+    
+    # Kimi-K2.5 多模态模型（使用 MultiModalConversation 调用）
+    #joke_gen_all(modelname="kimi-k2.5")
+    
