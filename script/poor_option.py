@@ -1,12 +1,15 @@
-#poor_option.py 根据新闻标题生成差选项（多语言版本）
-#差选项类型：Irrelevant_Response, Repetition, Bland_Statement, Template_Response
+# poor_option.py 根据新闻标题生成不同质量等级的笑话候选（多语言版本）
+# 质量等级：
+#   低质量(low): Forced_Pun, Overexplained_Joke, Cliche_Joke, Weak_Connection
+#   中等质量(medium): Safe_Humor, Predictable_Punchline, Surface_Level, Generic_Wit
+#   高质量(high): 复用 good_option.py 输出，不在此脚本生成
 import dashscope
 from dashscope import Generation
 import json
 import time
 import os
 
-# 设置DashScope API密钥 (替换为你的实际API_KEY)
+# 设置DashScope API密钥
 dashscope.api_key = os.getenv("DASHSCOPE_API_KEY")
 
 # 获取脚本所在目录的绝对路径
@@ -16,100 +19,240 @@ PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
 # 使用的模型
 MODEL_NAME = "deepseek-v3.2"
 
-# 差选项类型列表
-POOR_OPTION_TYPES = ["Irrelevant_Response", "Repetition", "Bland_Statement", "Template_Response"]
+# 质量等级定义
+QUALITY_LEVELS = ["low", "medium"]  # high 由 good_option.py 生成
 
-# 定义不同语言、不同差选项类型的提示词模板
+# 低质量笑话类型
+LOW_OPTION_TYPES = ["Forced_Pun", "Overexplained_Joke", "Cliche_Joke", "Weak_Connection"]
+
+# 中等质量笑话类型
+MEDIUM_OPTION_TYPES = ["Safe_Humor", "Predictable_Punchline", "Surface_Level", "Generic_Wit"]
+
+# ==================== 提示词模板 ====================
+
 PROMPTS = {
+    # ==================== 英文提示词 ====================
     "en": {
-        "Irrelevant_Response": """Given the following news headline, generate a short response that is COMPLETELY IRRELEVANT to the headline. The response should have nothing to do with the topic of the news. It should look like a random, off-topic sentence that someone might say in a casual conversation.
+        # --- 低质量 ---
+        "Forced_Pun": """Given the following news headline, create a joke that FORCES a pun or wordplay. The pun should feel AWKWARD, UNNATURAL, and FORCED — as if the author is desperately trying to be clever but failing. The joke should still be recognizable as an attempt at humor, not gibberish.
+
+IMPORTANT quality constraint: This joke should NOT make anyone genuinely laugh. If a reader's reaction is anything more than an eye-roll or a groan, it's too good. Aim for a joke that people would describe as "painful" or "try-hard".
 
 News headline: "{headline}"
 
-Only return the irrelevant response and nothing else. Do NOT include any explanation.""",
+Only return the joke and nothing else. Do NOT include any explanation.""",
 
-        "Repetition": """Given the following news headline, generate a response that simply REPEATS or SLIGHTLY REPHRASES the headline without adding any humor, insight, or creativity. The response should be a boring restatement of the same information.
+        "Overexplained_Joke": """Given the following news headline, create a joke where the punchline is OVER-EXPLAINED. First deliver the joke, then immediately explain why it's supposed to be funny, which KILLS the humor. The joke should be recognizable as an attempt at humor but ruined by unnecessary explanation.
 
-News headline: "{headline}"
-
-Only return the rephrased headline and nothing else. Do NOT include any explanation.""",
-
-        "Bland_Statement": """Given the following news headline, generate a BLAND, FACTUAL statement related to the topic. The response should be relevant to the headline but completely lack any humor, wit, or entertainment value. It should read like a dry encyclopedia entry or a boring comment.
+IMPORTANT quality constraint: This joke should NOT make anyone genuinely laugh. The over-explanation should completely drain any humor. A reader should think "that would have been okay if they hadn't explained it" — but even the base joke should be mediocre at best.
 
 News headline: "{headline}"
 
-Only return the bland statement and nothing else. Do NOT include any explanation.""",
+Only return the joke (with its over-explanation) and nothing else. Do NOT include any explanation of the task.""",
 
-        "Template_Response": """Given the following news headline, generate a GENERIC, TEMPLATE-LIKE response that could apply to almost any news headline. The response should feel mechanical, formulaic, and lacking any specific connection to the actual content of the headline. Use clichéd phrases like "That's interesting!", "Wow, what a story!", "This is so funny!", etc.
+        "Cliche_Joke": """Given the following news headline, create a joke using an EXTREMELY CLICHÉ and OVERUSED joke format. Use tired patterns like "Why did the X cross the road?", "What do you call a X?", "X walks into a bar...", or other predictable formats. The joke should feel stale and unoriginal.
+
+IMPORTANT quality constraint: This joke should NOT make anyone genuinely laugh. It should feel like a joke recycled from a 1990s joke book. A reader should immediately recognize they've heard this exact format hundreds of times and feel zero surprise.
 
 News headline: "{headline}"
 
-Only return the template response and nothing else. Do NOT include any explanation.""",
+Only return the joke and nothing else. Do NOT include any explanation.""",
+
+        "Weak_Connection": """Given the following news headline, create a joke that is LOOSELY related to the headline but with a WEAK, UNCONVINCING punchline. The joke should attempt to connect to the news topic but the humor should feel FORCED and the logic should be a STRETCH. It should be recognizable as a joke attempt but not actually funny.
+
+IMPORTANT quality constraint: This joke should NOT make anyone genuinely laugh. The connection between the headline and the punchline should feel like a reach — as if someone spent 5 seconds thinking of any remotely related joke. A reader should think "what does that even have to do with the headline?".
+
+News headline: "{headline}"
+
+Only return the joke and nothing else. Do NOT include any explanation.""",
+
+        # --- 中等质量 ---
+        "Safe_Humor": """Given the following news headline, create a joke that is MILDLY AMUSING but SAFE and UNREMARKABLE. It should be the kind of joke that makes someone smile politely but not actually laugh out loud. Avoid anything too creative, surprising, or edgy. Keep it pleasant but forgettable.
+
+IMPORTANT quality constraint: This joke should be DECENT but NOT worth sharing with friends. It's the kind of joke you'd hear at a corporate event — inoffensive, mildly clever, but no one would remember it the next day. It should be clearly better than a terrible joke, but clearly worse than a genuinely witty one.
+
+News headline: "{headline}"
+
+Only return the joke and nothing else. Do NOT include any explanation.""",
+
+        "Predictable_Punchline": """Given the following news headline, create a joke where the PUNCHLINE IS PREDICTABLE. A reader should be able to guess where the joke is going before reaching the end. The setup should be decent, but the payoff should be OBVIOUS and EXPECTED. It should still work as a joke, just not a surprising one.
+
+IMPORTANT quality constraint: This joke should be DECENT but NOT worth sharing with friends. The setup should show some competence, but the punchline should land with a "yeah, I saw that coming" reaction. It should be clearly better than a cringe-worthy joke, but clearly worse than one that delivers a genuine surprise.
+
+News headline: "{headline}"
+
+Only return the joke and nothing else. Do NOT include any explanation.""",
+
+        "Surface_Level": """Given the following news headline, create a joke that only uses the SURFACE-LEVEL, MOST OBVIOUS aspect of the headline. Don't dig deeper into the implications or find unexpected angles. Just make a straightforward, somewhat amusing observation that anyone could have made. It should be adequate but LACKING DEPTH or INSIGHT.
+
+IMPORTANT quality constraint: This joke should be DECENT but NOT worth sharing with friends. It should read like something anyone could come up with in 10 seconds. It should be clearly better than a nonsensical or cringe joke, but clearly worse than an insightful or clever observation.
+
+News headline: "{headline}"
+
+Only return the joke and nothing else. Do NOT include any explanation.""",
+
+        "Generic_Wit": """Given the following news headline, create a joke that shows SOME WIT but is NOT particularly TARGETED or SPECIFIC to this headline. The joke should be decent enough — grammatically correct, properly structured — but could almost work with many similar headlines. It should lack that special spark of originality.
+
+IMPORTANT quality constraint: This joke should be DECENT but NOT worth sharing with friends. It should feel like a "template joke" where someone just swapped in the topic. It should be clearly better than an awkward or forced joke, but clearly worse than one with a unique, headline-specific twist.
+
+News headline: "{headline}"
+
+Only return the joke and nothing else. Do NOT include any explanation.""",
     },
 
+    # ==================== 西班牙文提示词 ====================
     "es": {
-        "Irrelevant_Response": """Dado el siguiente titular de noticias, genera una respuesta corta que sea COMPLETAMENTE IRRELEVANTE al titular. La respuesta no debe tener nada que ver con el tema de la noticia. Debe parecer una frase aleatoria y fuera de tema.
+        # --- 低质量 ---
+        "Forced_Pun": """Dado el siguiente titular de noticias, crea un chiste que FUERCE un juego de palabras. El juego de palabras debe sentirse TORPE, ANTINATURAL y FORZADO, como si el autor estuviera intentando desesperadamente ser ingenioso pero fracasando. El chiste debe ser reconocible como un intento de humor, no sin sentido.
+
+Restricciones de calidad IMPORTANTES: Este chiste NO debería hacer reír genuinamente a nadie. Si la reacción del lector es algo más que poner los ojos en blanco o un quejido, es demasiado bueno. Apunta a un chiste que la gente describiría como "doloroso" o "forzado".
 
 Titular: "{headline}"
 
-Solo devuelve la respuesta irrelevante y nada más. NO incluyas ninguna explicación. La respuesta debe estar en español.""",
+Solo devuelve el chiste y nada más. NO incluyas ninguna explicación. La respuesta debe estar en español.""",
 
-        "Repetition": """Dado el siguiente titular de noticias, genera una respuesta que simplemente REPITA o REFORMULE LIGERAMENTE el titular sin añadir humor, perspicacia o creatividad. La respuesta debe ser una reformulación aburrida de la misma información.
+        "Overexplained_Joke": """Dado el siguiente titular de noticias, crea un chiste donde el remate esté SOBRE-EXPLICADO. Primero cuenta el chiste, luego explica inmediatamente por qué se supone que es gracioso, lo que MATA el humor. El chiste debe ser reconocible como un intento de humor pero arruinado por la explicación innecesaria.
 
-Titular: "{headline}"
-
-Solo devuelve el titular reformulado y nada más. NO incluyas ninguna explicación. La respuesta debe estar en español.""",
-
-        "Bland_Statement": """Dado el siguiente titular de noticias, genera una declaración PLANA y FACTUAL relacionada con el tema. La respuesta debe ser relevante al titular pero carecer completamente de humor o valor de entretenimiento. Debe leerse como una entrada de enciclopedia aburrida.
+Restricciones de calidad IMPORTANTES: Este chiste NO debería hacer reír genuinamente a nadie. La sobre-explicación debe drenar completamente cualquier humor. El lector debería pensar "eso habría estado bien si no lo hubieran explicado" — pero incluso el chiste base debería ser mediocre en el mejor caso.
 
 Titular: "{headline}"
 
-Solo devuelve la declaración plana y nada más. NO incluyas ninguna explicación. La respuesta debe estar en español.""",
+Solo devuelve el chiste (con su sobre-explicación) y nada más. La respuesta debe estar en español.""",
 
-        "Template_Response": """Dado el siguiente titular de noticias, genera una respuesta GENÉRICA y de PLANTILLA que podría aplicarse a casi cualquier titular. La respuesta debe sentirse mecánica y formulaica. Usa frases cliché como "¡Qué interesante!", "¡Vaya historia!", "¡Esto es muy gracioso!", etc.
+        "Cliche_Joke": """Dado el siguiente titular de noticias, crea un chiste usando un formato EXTREMADAMENTE CLICHÉ y SOBREUSADO. Usa patrones trillados como "¿Por qué el X cruzó la calle?", "¿Cómo se llama un X?", "Un X entra en un bar..." u otros formatos predecibles. El chiste debe sentirse gastado y poco original.
+
+Restricciones de calidad IMPORTANTES: Este chiste NO debería hacer reír genuinamente a nadie. Debe sentirse como un chiste reciclado de un libro de chistes de los años 90. El lector debería reconocer inmediatamente que ha escuchado este formato cientos de veces y sentir cero sorpresa.
 
 Titular: "{headline}"
 
-Solo devuelve la respuesta de plantilla y nada más. NO incluyas ninguna explicación. La respuesta debe estar en español.""",
+Solo devuelve el chiste y nada más. NO incluyas ninguna explicación. La respuesta debe estar en español.""",
+
+        "Weak_Connection": """Dado el siguiente titular de noticias, crea un chiste que esté VAGAMENTE relacionado con el titular pero con un remate DÉBIL y POCO CONVINCENTE. El chiste debe intentar conectarse con el tema pero el humor debe sentirse FORZADO y la lógica debe ser REBUSCADA. Debe reconocerse como un intento de chiste pero no ser realmente gracioso.
+
+Restricciones de calidad IMPORTANTES: Este chiste NO debería hacer reír genuinamente a nadie. La conexión entre el titular y el remate debe sentirse forzada — como si alguien hubiera pensado 5 segundos en cualquier chiste remotamente relacionado. El lector debería pensar "¿qué tiene que ver eso con el titular?".
+
+Titular: "{headline}"
+
+Solo devuelve el chiste y nada más. NO incluyas ninguna explicación. La respuesta debe estar en español.""",
+
+        # --- 中等质量 ---
+        "Safe_Humor": """Dado el siguiente titular de noticias, crea un chiste que sea LIGERAMENTE DIVERTIDO pero SEGURO y SIN NADA ESPECIAL. Debe ser el tipo de chiste que hace sonreír educadamente pero no reír a carcajadas. Evita cualquier cosa demasiado creativa, sorprendente o atrevida. Mantenlo agradable pero olvidable.
+
+Restricciones de calidad IMPORTANTES: Este chiste debe ser DECENTE pero NO vale la pena compartirlo con amigos. Es el tipo de chiste que escucharías en un evento corporativo — inofensivo, ligeramente ingenioso, pero nadie lo recordaría al día siguiente. Debe ser claramente mejor que un chiste terrible, pero claramente peor que uno genuinamente ingenioso.
+
+Titular: "{headline}"
+
+Solo devuelve el chiste y nada más. NO incluyas ninguna explicación. La respuesta debe estar en español.""",
+
+        "Predictable_Punchline": """Dado el siguiente titular de noticias, crea un chiste donde el REMATE SEA PREDECIBLE. Un lector debería poder adivinar hacia dónde va el chiste antes de llegar al final. La premisa debe ser decente, pero el desenlace debe ser OBVIO y ESPERADO. Debe funcionar como chiste, pero no sorprender.
+
+Restricciones de calidad IMPORTANTES: Este chiste debe ser DECENTE pero NO vale la pena compartirlo con amigos. La premisa debe mostrar cierta competencia, pero el remate debe provocar una reacción de "sí, lo veía venir". Debe ser claramente mejor que un chiste vergonzoso, pero claramente peor que uno que entrega una sorpresa genuina.
+
+Titular: "{headline}"
+
+Solo devuelve el chiste y nada más. NO incluyas ninguna explicación. La respuesta debe estar en español.""",
+
+        "Surface_Level": """Dado el siguiente titular de noticias, crea un chiste que solo use el aspecto MÁS SUPERFICIAL y OBVIO del titular. No profundices en las implicaciones ni busques ángulos inesperados. Solo haz una observación directa y algo divertida que cualquiera podría haber hecho. Debe ser adecuado pero CARECER DE PROFUNDIDAD.
+
+Restricciones de calidad IMPORTANTES: Este chiste debe ser DECENTE pero NO vale la pena compartirlo con amigos. Debe leerse como algo que cualquiera podría pensar en 10 segundos. Debe ser claramente mejor que un chiste sin sentido o vergonzoso, pero claramente peor que una observación perspicaz o ingeniosa.
+
+Titular: "{headline}"
+
+Solo devuelve el chiste y nada más. NO incluyas ninguna explicación. La respuesta debe estar en español.""",
+
+        "Generic_Wit": """Dado el siguiente titular de noticias, crea un chiste que muestre ALGO DE INGENIO pero que NO sea particularmente ESPECÍFICO para este titular. El chiste debe ser decente — gramaticalmente correcto, bien estructurado — pero podría funcionar con muchos titulares similares. Debe carecer de esa chispa especial de originalidad.
+
+Restricciones de calidad IMPORTANTES: Este chiste debe ser DECENTE pero NO vale la pena compartirlo con amigos. Debe sentirse como un "chiste plantilla" donde alguien solo cambió el tema. Debe ser claramente mejor que un chiste torpe o forzado, pero claramente peor que uno con un giro único y específico del titular.
+
+Titular: "{headline}"
+
+Solo devuelve el chiste y nada más. NO incluyas ninguna explicación. La respuesta debe estar en español.""",
     },
 
+    # ==================== 中文提示词 ====================
     "zh": {
-        "Irrelevant_Response": """根据以下新闻标题，生成一个与标题完全无关的简短回复。回复内容不能与新闻主题有任何关联，应该像是一句随机的、离题的日常对话。
+        # --- 低质量 ---
+       "Forced_Pun": """根据以下新闻标题，创作一个强行使用谐音梗或双关语的笑话。双关应该显得生硬、不自然、刻意为之，就像作者拼命想要表现幽默但失败了一样。笑话应该仍然能被识别为一个幽默尝试，而不是胡言乱语。
+
+重要质量约束：这个笑话不应该让任何人真正笑出来。如果读者的反应超过了翻白眼或叹气，那就说明太好了。目标是那种人们会形容为"尬"或"硬凹"的笑话。
 
 新闻标题："{headline}"
 
-只返回无关回复，不要包含任何解释。回复必须使用中文。""",
+只返回笑话本身，不要包含任何解释。回复必须使用中文。""",
 
-        "Repetition": """根据以下新闻标题，生成一个简单重复或轻微改写标题的回复，不添加任何幽默、见解或创意。回复应该是对同一信息的无聊复述。
+       "Overexplained_Joke": """根据以下新闻标题，创作一个笑点被过度解释的笑话。先讲笑话，然后立刻解释为什么它应该是好笑的，从而毁掉幽默感。笑话应该能被识别为一个幽默尝试，但被不必要的解释破坏了。
 
-新闻标题："{headline}"
-
-只返回改写后的标题，不要包含任何解释。回复必须使用中文。""",
-
-        "Bland_Statement": """根据以下新闻标题，生成一个与主题相关但过于平淡的事实性陈述。回复应与标题相关，但完全缺乏幽默感或娱乐价值，读起来像一条枯燥的百科词条或无聊的评论。
+重要质量约束：这个笑话不应该让任何人真正笑出来。过度解释应该彻底抽干所有幽默感。读者应该觉得"如果不解释的话还凑合"——但即使是基础笑话本身也最多算平庸。
 
 新闻标题："{headline}"
 
-只返回平淡陈述，不要包含任何解释。回复必须使用中文。""",
+只返回笑话（包含过度解释的部分），不要包含对任务本身的解释。回复必须使用中文。""",
 
-        "Template_Response": """根据以下新闻标题，生成一个通用的、模板化的回复，这种回复可以套用在几乎任何新闻标题上。回复应该感觉机械、公式化，缺乏与标题实际内容的具体联系。使用类似"这真有趣！"、"哇，这个故事太精彩了！"、"太搞笑了！"等陈词滥调。
+        "Cliche_Joke": """根据以下新闻标题，使用极其老套和过时的笑话格式创作一个笑话。使用诸如"小明系列"、"为什么X要过马路？"、"X和Y有什么区别？"等陈旧的模式。笑话应该感觉过时且毫无新意。
+
+重要质量约束：这个笑话不应该让任何人真正笑出来。它应该像是从90年代笑话书里翻出来的。读者应该立刻意识到自己已经听过这种格式几百遍了，完全没有惊喜感。
 
 新闻标题："{headline}"
 
-只返回模板化回复，不要包含任何解释。回复必须使用中文。""",
+只返回笑话本身，不要包含任何解释。回复必须使用中文。""",
+
+       "Weak_Connection": """根据以下新闻标题，创作一个与标题勉强相关但笑点牵强的笑话。笑话应该试图与新闻主题建立联系，但幽默感应该是勉强的，逻辑应该是牵强附会的。它应该能被识别为一个笑话尝试，但实际上并不好笑。
+
+重要质量约束：这个笑话不应该让任何人真正笑出来。标题和笑点之间的联系应该很牵强——像是某人花了5秒钟随便想的一个勉强相关的笑话。读者应该觉得"这跟标题有什么关系？"。
+
+新闻标题："{headline}"
+
+只返回笑话本身，不要包含任何解释。回复必须使用中文。""",
+
+        # --- 中等质量 ---
+        "Safe_Humor": """根据以下新闻标题，创作一个温和有趣但安全平庸的笑话。它应该是那种让人礼貌微笑但不会真正大笑的笑话。避免太有创意、太出人意料或太尖锐的内容。保持愉快但容易被遗忘。
+
+重要质量约束：这个笑话应该还不错，但不值得分享给朋友。就像在公司年会上听到的那种——无害、有点小聪明，但第二天没人会记得。它应该明显好于一个糟糕的笑话，但明显不如一个真正机智的笑话。
+
+新闻标题："{headline}"
+
+只返回笑话本身，不要包含任何解释。回复必须使用中文。""",
+
+       "Predictable_Punchline": """根据以下新闻标题，创作一个笑点可预测的笑话。读者应该在看到结尾之前就能猜到笑话的走向。铺垫可以还不错，但笑点应该是显而易见、在意料之中的。它仍然应该作为笑话成立，只是不够出人意料。
+
+重要质量约束：这个笑话应该还不错，但不值得分享给朋友。铺垫应该表现出一定水平，但笑点应该让人觉得"嗯，意料之中"。它应该明显好于一个令人尴尬的笑话，但明显不如一个能带来真正惊喜的笑话。
+
+新闻标题："{headline}"
+
+只返回笑话本身，不要包含任何解释。回复必须使用中文。""",
+
+        "Surface_Level": """根据以下新闻标题，创作一个只利用标题最表面、最明显信息的笑话。不要深入挖掘深层含义或寻找意想不到的角度。只做一个任何人都能想到的直白、稍微有趣的观察。笑话应该还算合格，但缺乏深度和洞察力。
+
+重要质量约束：这个笑话应该还不错，但不值得分享给朋友。它读起来像是任何人用10秒钟就能想到的东西。它应该明显好于一个莫名其妙或令人尴尬的笑话，但明显不如一个有洞察力或巧妙的观察。
+
+新闻标题："{headline}"
+
+只返回笑话本身，不要包含任何解释。回复必须使用中文。""",
+
+       "Generic_Wit": """根据以下新闻标题，创作一个有一定机智但不特别针对这条标题的笑话。笑话应该还算不错——语法正确、结构完整——但几乎可以套用在许多类似的标题上。它应该缺乏那种特别的原创火花。
+
+重要质量约束：这个笑话应该还不错，但不值得分享给朋友。它应该给人一种"套模板"的感觉，只是换了个话题而已。它应该明显好于一个生硬或尴尬的笑话，但明显不如一个有独特标题针对性的笑话。
+
+新闻标题："{headline}"
+
+只返回笑话本身，不要包含任何解释。回复必须使用中文。""",
     },
 }
 
 
-def generate_poor_option(headline, lang, option_type):
+def generate_option(headline, lang, option_type, quality_level):
     """
-    根据新闻标题生成指定类型的差选项
+    根据新闻标题生成指定类型和质量等级的笑话
     :param headline: 新闻标题
     :param lang: 语言代码 ('en', 'es', 'zh')
-    :param option_type: 差选项类型
-    :return: 生成的差选项内容
+    :param option_type: 笑话类型
+    :param quality_level: 质量等级 ('low', 'medium')
+    :return: 生成的笑话内容
     """
     prompt = PROMPTS[lang][option_type].format(headline=headline)
+
+    # 低质量使用高temperature增加随机性和不连贯感，中等质量用低temperature保持流畅但平庸
+    temperature = 1.2 if quality_level == "low" else 0.6
 
     max_retries = 3
     retry_delay = 1
@@ -121,8 +264,8 @@ def generate_poor_option(headline, lang, option_type):
                 messages=[{"role": "user", "content": prompt}],
                 extra_body={"enable_thinking": True},
                 result_format="message",
-                temperature=0.85,
-                top_p=0.9
+                temperature=temperature,
+                top_p=0.95 if quality_level == "low" else 0.7
             )
 
             if response.status_code == 200:
@@ -145,17 +288,20 @@ def generate_poor_option(headline, lang, option_type):
                 return {"error": True, "message": f"处理异常: {str(e)}"}
 
 
-def generate_all_poor_options(headline, lang):
+def generate_all_options(headline, lang, quality_level):
     """
-    为一条新闻标题生成所有4种差选项
+    为一条新闻标题生成指定质量等级的所有4种笑话
     :param headline: 新闻标题
     :param lang: 语言代码
-    :return: 包含4种差选项的字典
+    :param quality_level: 质量等级 ('low', 'medium')
+    :return: 包含4种笑话的字典
     """
+    option_types = LOW_OPTION_TYPES if quality_level == "low" else MEDIUM_OPTION_TYPES
+
     results = {}
-    for option_type in POOR_OPTION_TYPES:
-        print(f"    生成 {option_type}...")
-        result = generate_poor_option(headline, lang, option_type)
+    for option_type in option_types:
+        print(f"    生成 [{quality_level}] {option_type}...")
+        result = generate_option(headline, lang, option_type, quality_level)
 
         if isinstance(result, dict) and result.get("error"):
             results[option_type] = f"[ERROR] {result['message']}"
@@ -171,15 +317,16 @@ def generate_all_poor_options(headline, lang):
     return results
 
 
-def process_headlines(input_file, output_file, lang, resume=True):
+def process_headlines(input_file, output_file, lang, quality_level, resume=True):
     """
-    处理新闻标题文件并生成差选项
+    处理新闻标题文件并生成指定质量等级的笑话
     :param input_file: 输入JSON文件路径
     :param output_file: 输出JSON文件路径
     :param lang: 语言代码 ('en', 'es', 'zh')
+    :param quality_level: 质量等级 ('low', 'medium')
     :param resume: 是否启用断点续传
     """
-    print(f"开始处理 {lang} 语言文件: {input_file}")
+    print(f"开始处理 {lang} 语言文件 (质量等级: {quality_level}): {input_file}")
     print(f"使用模型: {MODEL_NAME}")
 
     with open(input_file, 'r', encoding='utf-8') as f:
@@ -198,6 +345,7 @@ def process_headlines(input_file, output_file, lang, resume=True):
             processed_data = []
             processed_ids = set()
 
+    option_types = LOW_OPTION_TYPES if quality_level == "low" else MEDIUM_OPTION_TYPES
     total = len(data)
     error_count = 0
 
@@ -211,12 +359,12 @@ def process_headlines(input_file, output_file, lang, resume=True):
 
         print(f"[{idx + 1}/{total}] 处理: {item_id} - {headline[:40]}...")
 
-        # 生成所有4种差选项
-        poor_options = generate_all_poor_options(headline, lang)
+        # 生成所有4种笑话
+        options = generate_all_options(headline, lang, quality_level)
 
         # 统计错误数
-        for opt_type in POOR_OPTION_TYPES:
-            if poor_options[opt_type].startswith("[ERROR]"):
+        for opt_type in option_types:
+            if options[opt_type].startswith("[ERROR]"):
                 error_count += 1
 
         # 构建输出结果
@@ -224,7 +372,7 @@ def process_headlines(input_file, output_file, lang, resume=True):
             "id": item_id,
             "news_headline": headline,
         }
-        result.update(poor_options)
+        result.update(options)
 
         processed_data.append(result)
 
@@ -242,11 +390,15 @@ def process_headlines(input_file, output_file, lang, resume=True):
     print(f"结果保存到: {output_file}")
 
 
-def poor_option_gen_all(output_dir=None):
+def option_gen_all(quality_level="low", output_dir=None):
     """
-    处理所有语言的新闻标题，生成差选项数据集
+    处理所有语言的新闻标题，生成指定质量等级的笑话数据集
+    :param quality_level: 质量等级 ('low', 'medium')
     :param output_dir: 输出目录
     """
+    if quality_level not in ("low", "medium"):
+        raise ValueError(f"quality_level 必须是 'low' 或 'medium'，收到: {quality_level}")
+
     if output_dir is None:
         output_dir = os.path.join(PROJECT_ROOT, "output")
 
@@ -254,29 +406,45 @@ def poor_option_gen_all(output_dir=None):
 
     data_dir = os.path.join(PROJECT_ROOT, "data")
 
+    prefix = "low_option" if quality_level == "low" else "medium_option"
+
     files = [
-        (os.path.join(data_dir, "headlines_en.json"), os.path.join(output_dir, "poor_option_en.json"), "en"),
-        (os.path.join(data_dir, "headlines_es.json"), os.path.join(output_dir, "poor_option_es.json"), "es"),
-        (os.path.join(data_dir, "headlines_zh.json"), os.path.join(output_dir, "poor_option_zh.json"), "zh"),
+        (os.path.join(data_dir, "headlines_en.json"), os.path.join(output_dir, f"{prefix}_en.json"), "en"),
+        (os.path.join(data_dir, "headlines_es.json"), os.path.join(output_dir, f"{prefix}_es.json"), "es"),
+        (os.path.join(data_dir, "headlines_zh.json"), os.path.join(output_dir, f"{prefix}_zh.json"), "zh"),
     ]
 
     for input_file, output_file, lang in files:
         print(f"\n{'='*60}")
-        print(f"处理语言: {lang}")
+        print(f"处理语言: {lang} | 质量等级: {quality_level}")
         print(f"{'='*60}")
-        process_headlines(input_file, output_file, lang)
+        process_headlines(input_file, output_file, lang, quality_level)
 
 
 # ================== 使用示例 ==================
 if __name__ == "__main__":
-    # 处理所有语言
-    poor_option_gen_all()
+    import argparse
 
-    # 也可以单独处理某一语言：
-    # data_dir = os.path.join(PROJECT_ROOT, "data")
-    # output_dir = os.path.join(PROJECT_ROOT, "output")
-    # process_headlines(
-    #     os.path.join(data_dir, "headlines_en.json"),
-    #     os.path.join(output_dir, "poor_option_en.json"),
-    #     "en"
-    # )
+    parser = argparse.ArgumentParser(description="生成不同质量等级的笑话候选选项")
+    parser.add_argument('--quality', type=str, default='low', choices=['low', 'medium'],
+                        help='质量等级: low(低质量), medium(中等质量)')
+    parser.add_argument('--lang', type=str, default=None, choices=['en', 'es', 'zh'],
+                        help='指定单一语言处理，不指定则处理全部语言')
+    args = parser.parse_args()
+
+    if args.lang:
+        # 处理单一语言
+        data_dir = os.path.join(PROJECT_ROOT, "data")
+        output_dir = os.path.join(PROJECT_ROOT, "output")
+        os.makedirs(output_dir, exist_ok=True)
+
+        prefix = "low_option" if args.quality == "low" else "medium_option"
+        process_headlines(
+            os.path.join(data_dir, f"headlines_{args.lang}.json"),
+            os.path.join(output_dir, f"{prefix}_{args.lang}.json"),
+            args.lang,
+            args.quality
+        )
+    else:
+        # 处理所有语言
+        option_gen_all(quality_level=args.quality)
