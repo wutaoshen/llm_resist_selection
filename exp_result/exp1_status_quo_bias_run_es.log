@@ -3356,3 +3356,3706 @@
 
     [qwen3.6-27b] 决策: create | 选笑话编号: None
     [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时88.4s | 总耗时2.5min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (194 条)
+
+============================================================
+处理 es_0295... (195/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时56.7s | 总耗时3.4min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (195 条)
+
+============================================================
+处理 es_0296... (196/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [API] 可重试异常: HTTPSConnectionPool(host='dashscope.aliyuncs.com', port=443): Max retries exceeded with url: /api/v1, 等待1.6s后重试 (1/5), model=qwen3.6-27b
+    [API] 可重试异常: HTTPSConnectionPool(host='dashscope.aliyuncs.com', port=443): Max retries exceeded with url: /api/v1, 等待1.9s后重试 (1/5), model=qwen3.6-27b
+    [API] 可重试异常: HTTPSConnectionPool(host='dashscope.aliyuncs.com', port=443): Max retries exceeded with url: /api/v1, 等待2.1s后重试 (1/5), model=qwen3.6-27b
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时106.6s | 总耗时5.2min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (196 条)
+
+============================================================
+处理 es_0297... (197/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时95.2s | 总耗时6.8min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (197 条)
+
+============================================================
+处理 es_0298... (198/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时77.6s | 总耗时8.1min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (198 条)
+
+============================================================
+处理 es_0299... (199/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时104.0s | 总耗时9.8min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (199 条)
+
+============================================================
+处理 es_0300... (200/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [API] 可重试异常: HTTPSConnectionPool(host='dashscope.aliyuncs.com', port=443): Read timed out. (read timeout=300), 等待2.5s后重试 (1/5), model=qwen3.6-27b
+    [API] 可重试异常: HTTPSConnectionPool(host='dashscope.aliyuncs.com', port=443): Read timed out. (read timeout=300), 等待4.6s后重试 (2/5), model=qwen3.6-27b
+    [API] 可重试异常: HTTPSConnectionPool(host='dashscope.aliyuncs.com', port=443): Read timed out. (read timeout=300), 等待9.2s后重试 (3/5), model=qwen3.6-27b
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+
+  Item完成: 耗时944.0s | 总耗时25.5min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (200 条)
+
+============================================================
+处理 es_0301... (201/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时53.6s | 总耗时26.4min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (201 条)
+
+============================================================
+处理 es_0302... (202/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时59.1s | 总耗时27.4min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (202 条)
+
+============================================================
+处理 es_0303... (203/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时73.1s | 总耗时28.6min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (203 条)
+
+============================================================
+处理 es_0304... (204/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时53.6s | 总耗时29.5min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (204 条)
+
+============================================================
+处理 es_0305... (205/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时45.2s | 总耗时30.3min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (205 条)
+
+============================================================
+处理 es_0306... (206/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时74.8s | 总耗时31.5min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (206 条)
+
+============================================================
+处理 es_0307... (207/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时73.6s | 总耗时32.8min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (207 条)
+
+============================================================
+处理 es_0308... (208/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [API] 可重试异常: HTTPSConnectionPool(host='dashscope.aliyuncs.com', port=443): Read timed out. (read timeout=300), 等待2.4s后重试 (1/5), model=qwen3.6-27b
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时353.3s | 总耗时38.7min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (208 条)
+
+============================================================
+处理 es_0309... (209/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [API] 可重试异常: HTTPSConnectionPool(host='dashscope.aliyuncs.com', port=443): Read timed out. (read timeout=300), 等待2.1s后重试 (1/5), model=qwen3.6-27b
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时385.6s | 总耗时45.1min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (209 条)
+
+============================================================
+处理 es_0310... (210/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时68.1s | 总耗时46.2min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (210 条)
+
+============================================================
+处理 es_0311... (211/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时91.6s | 总耗时47.8min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (211 条)
+
+============================================================
+处理 es_0312... (212/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时44.1s | 总耗时48.5min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (212 条)
+
+============================================================
+处理 es_0313... (213/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [API] 可重试异常: HTTPSConnectionPool(host='dashscope.aliyuncs.com', port=443): Read timed out. (read timeout=300), 等待2.4s后重试 (1/5), model=qwen3.6-27b
+    [qwen3.6-27b] 决策: select | 选笑话编号: 1
+
+  Item完成: 耗时346.5s | 总耗时54.3min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (213 条)
+
+============================================================
+处理 es_0314... (214/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时58.2s | 总耗时55.2min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (214 条)
+
+============================================================
+处理 es_0315... (215/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时47.6s | 总耗时56.0min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (215 条)
+
+============================================================
+处理 es_0316... (216/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时58.5s | 总耗时57.0min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (216 条)
+
+============================================================
+处理 es_0317... (217/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时105.6s | 总耗时58.8min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (217 条)
+
+============================================================
+处理 es_0318... (218/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时43.4s | 总耗时59.5min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (218 条)
+
+============================================================
+处理 es_0319... (219/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时71.7s | 总耗时60.7min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (219 条)
+
+============================================================
+处理 es_0320... (220/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时27.7s | 总耗时61.2min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (220 条)
+
+============================================================
+处理 es_0321... (221/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时44.9s | 总耗时61.9min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (221 条)
+
+============================================================
+处理 es_0322... (222/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时97.1s | 总耗时63.5min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (222 条)
+
+============================================================
+处理 es_0323... (223/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时89.8s | 总耗时65.0min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (223 条)
+
+============================================================
+处理 es_0324... (224/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+
+  Item完成: 耗时49.1s | 总耗时65.8min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (224 条)
+
+============================================================
+处理 es_0325... (225/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时83.0s | 总耗时67.2min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (225 条)
+
+============================================================
+处理 es_0326... (226/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时63.0s | 总耗时68.3min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (226 条)
+
+============================================================
+处理 es_0327... (227/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时72.3s | 总耗时69.5min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (227 条)
+
+============================================================
+处理 es_0328... (228/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时106.7s | 总耗时71.3min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (228 条)
+
+============================================================
+处理 es_0329... (229/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时60.3s | 总耗时72.3min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (229 条)
+
+============================================================
+处理 es_0330... (230/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时50.2s | 总耗时73.1min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (230 条)
+
+============================================================
+处理 es_0331... (231/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时66.2s | 总耗时74.2min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (231 条)
+
+============================================================
+处理 es_0332... (232/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时61.8s | 总耗时75.2min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (232 条)
+
+============================================================
+处理 es_0333... (233/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时57.4s | 总耗时76.2min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (233 条)
+
+============================================================
+处理 es_0334... (234/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时36.7s | 总耗时76.8min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (234 条)
+
+============================================================
+处理 es_0335... (235/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时85.2s | 总耗时78.2min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (235 条)
+
+============================================================
+处理 es_0336... (236/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时64.4s | 总耗时79.3min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (236 条)
+
+============================================================
+处理 es_0337... (237/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时69.8s | 总耗时80.5min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (237 条)
+
+============================================================
+处理 es_0338... (238/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时84.0s | 总耗时81.9min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (238 条)
+
+============================================================
+处理 es_0339... (239/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时41.7s | 总耗时82.6min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (239 条)
+
+============================================================
+处理 es_0340... (240/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时78.3s | 总耗时83.9min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (240 条)
+
+============================================================
+处理 es_0341... (241/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时48.5s | 总耗时84.7min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (241 条)
+
+============================================================
+处理 es_0342... (242/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时132.8s | 总耗时86.9min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (242 条)
+
+============================================================
+处理 es_0343... (243/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时46.6s | 总耗时87.7min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (243 条)
+
+============================================================
+处理 es_0344... (244/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时53.7s | 总耗时88.6min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (244 条)
+
+============================================================
+处理 es_0345... (245/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时63.8s | 总耗时89.6min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (245 条)
+
+============================================================
+处理 es_0346... (246/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 1
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时44.5s | 总耗时90.4min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (246 条)
+
+============================================================
+处理 es_0347... (247/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时63.5s | 总耗时91.5min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (247 条)
+
+============================================================
+处理 es_0348... (248/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+
+  Item完成: 耗时28.0s | 总耗时91.9min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (248 条)
+
+============================================================
+处理 es_0349... (249/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时98.6s | 总耗时93.6min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (249 条)
+
+============================================================
+处理 es_0350... (250/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时49.3s | 总耗时94.4min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (250 条)
+
+============================================================
+处理 es_0351... (251/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时67.9s | 总耗时95.5min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (251 条)
+
+============================================================
+处理 es_0352... (252/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时39.1s | 总耗时96.2min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (252 条)
+
+============================================================
+处理 es_0353... (253/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时99.1s | 总耗时97.8min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (253 条)
+
+============================================================
+处理 es_0354... (254/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时59.6s | 总耗时98.8min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (254 条)
+
+============================================================
+处理 es_0355... (255/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时55.6s | 总耗时99.8min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (255 条)
+
+============================================================
+处理 es_0356... (256/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时71.9s | 总耗时101.0min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (256 条)
+
+============================================================
+处理 es_0357... (257/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时43.1s | 总耗时101.7min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (257 条)
+
+============================================================
+处理 es_0358... (258/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时70.0s | 总耗时102.8min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (258 条)
+
+============================================================
+处理 es_0359... (259/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时97.7s | 总耗时104.5min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (259 条)
+
+============================================================
+处理 es_0360... (260/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时76.0s | 总耗时105.7min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (260 条)
+
+============================================================
+处理 es_0361... (261/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时40.1s | 总耗时106.4min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (261 条)
+
+============================================================
+处理 es_0362... (262/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时60.3s | 总耗时107.4min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (262 条)
+
+============================================================
+处理 es_0363... (263/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时85.5s | 总耗时108.8min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (263 条)
+
+============================================================
+处理 es_0364... (264/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时86.2s | 总耗时110.3min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (264 条)
+
+============================================================
+处理 es_0365... (265/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时59.6s | 总耗时111.3min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (265 条)
+
+============================================================
+处理 es_0366... (266/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时62.7s | 总耗时112.3min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (266 条)
+
+============================================================
+处理 es_0367... (267/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时36.3s | 总耗时112.9min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (267 条)
+
+============================================================
+处理 es_0368... (268/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时55.5s | 总耗时113.9min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (268 条)
+
+============================================================
+处理 es_0369... (269/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时72.0s | 总耗时115.1min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (269 条)
+
+============================================================
+处理 es_0370... (270/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+
+  Item完成: 耗时34.0s | 总耗时115.6min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (270 条)
+
+============================================================
+处理 es_0371... (271/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时53.9s | 总耗时116.5min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (271 条)
+
+============================================================
+处理 es_0372... (272/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时53.9s | 总耗时117.4min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (272 条)
+
+============================================================
+处理 es_0373... (273/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时72.8s | 总耗时118.6min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (273 条)
+
+============================================================
+处理 es_0374... (274/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 1
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时46.1s | 总耗时119.4min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (274 条)
+
+============================================================
+处理 es_0375... (275/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时59.0s | 总耗时120.4min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (275 条)
+
+============================================================
+处理 es_0376... (276/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时51.4s | 总耗时121.2min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (276 条)
+
+============================================================
+处理 es_0377... (277/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时75.4s | 总耗时122.5min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (277 条)
+
+============================================================
+处理 es_0378... (278/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时56.6s | 总耗时123.5min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (278 条)
+
+============================================================
+处理 es_0379... (279/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+
+  Item完成: 耗时75.8s | 总耗时124.7min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (279 条)
+
+============================================================
+处理 es_0380... (280/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时66.0s | 总耗时125.8min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (280 条)
+
+============================================================
+处理 es_0381... (281/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时69.0s | 总耗时127.0min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (281 条)
+
+============================================================
+处理 es_0382... (282/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时52.3s | 总耗时127.8min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (282 条)
+
+============================================================
+处理 es_0383... (283/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时59.4s | 总耗时128.8min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (283 条)
+
+============================================================
+处理 es_0384... (284/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时41.7s | 总耗时129.5min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (284 条)
+
+============================================================
+处理 es_0385... (285/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时51.9s | 总耗时130.4min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (285 条)
+
+============================================================
+处理 es_0386... (286/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时89.5s | 总耗时131.9min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (286 条)
+
+============================================================
+处理 es_0387... (287/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时34.9s | 总耗时132.5min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (287 条)
+
+============================================================
+处理 es_0388... (288/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时67.9s | 总耗时133.6min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (288 条)
+
+============================================================
+处理 es_0389... (289/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时50.1s | 总耗时134.4min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (289 条)
+
+============================================================
+处理 es_0390... (290/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时66.6s | 总耗时135.6min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (290 条)
+
+============================================================
+处理 es_0391... (291/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时78.1s | 总耗时136.9min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (291 条)
+
+============================================================
+处理 es_0392... (292/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时51.1s | 总耗时137.7min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (292 条)
+
+============================================================
+处理 es_0393... (293/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时76.3s | 总耗时139.0min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (293 条)
+
+============================================================
+处理 es_0394... (294/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [API] 可重试异常: HTTPSConnectionPool(host='dashscope.aliyuncs.com', port=443): Read timed out. (read timeout=300), 等待1.6s后重试 (1/5), model=qwen3.6-27b
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时389.2s | 总耗时145.5min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (294 条)
+
+============================================================
+处理 es_0395... (295/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时52.0s | 总耗时146.3min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (295 条)
+
+============================================================
+处理 es_0396... (296/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时56.8s | 总耗时147.3min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (296 条)
+
+============================================================
+处理 es_0397... (297/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时100.5s | 总耗时149.0min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (297 条)
+
+============================================================
+处理 es_0398... (298/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 1
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时56.4s | 总耗时149.9min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (298 条)
+
+============================================================
+处理 es_0399... (299/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时49.1s | 总耗时150.7min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (299 条)
+
+============================================================
+处理 es_0400... (300/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时37.7s | 总耗时151.4min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (300 条)
+
+============================================================
+处理 es_0401... (301/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时58.4s | 总耗时152.3min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (301 条)
+
+============================================================
+处理 es_0402... (302/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时65.6s | 总耗时153.4min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (302 条)
+
+============================================================
+处理 es_0403... (303/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [API] 可重试异常: HTTPSConnectionPool(host='dashscope.aliyuncs.com', port=443): Read timed out. (read timeout=300), 等待2.5s后重试 (1/5), model=qwen3.6-27b
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时384.1s | 总耗时159.8min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (303 条)
+
+============================================================
+处理 es_0404... (304/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时80.6s | 总耗时161.2min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (304 条)
+
+============================================================
+处理 es_0405... (305/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时90.4s | 总耗时162.7min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (305 条)
+
+============================================================
+处理 es_0406... (306/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时49.3s | 总耗时163.5min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (306 条)
+
+============================================================
+处理 es_0407... (307/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+
+  Item完成: 耗时92.9s | 总耗时165.1min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (307 条)
+
+============================================================
+处理 es_0408... (308/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时65.0s | 总耗时166.1min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (308 条)
+
+============================================================
+处理 es_0409... (309/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时41.1s | 总耗时166.8min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (309 条)
+
+============================================================
+处理 es_0410... (310/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时45.4s | 总耗时167.6min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (310 条)
+
+============================================================
+处理 es_0411... (311/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时62.3s | 总耗时168.6min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (311 条)
+
+============================================================
+处理 es_0412... (312/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时65.0s | 总耗时169.7min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (312 条)
+
+============================================================
+处理 es_0413... (313/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时55.5s | 总耗时170.6min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (313 条)
+
+============================================================
+处理 es_0414... (314/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时92.6s | 总耗时172.2min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (314 条)
+
+============================================================
+处理 es_0415... (315/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: select | 选笑话编号: 1
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时77.5s | 总耗时173.5min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (315 条)
+
+============================================================
+处理 es_0416... (316/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时62.9s | 总耗时174.5min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (316 条)
+
+============================================================
+处理 es_0417... (317/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: select | 选笑话编号: 1
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时55.9s | 总耗时175.5min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (317 条)
+
+============================================================
+处理 es_0418... (318/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时49.6s | 总耗时176.3min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (318 条)
+
+============================================================
+处理 es_0419... (319/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时63.0s | 总耗时177.3min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (319 条)
+
+============================================================
+处理 es_0420... (320/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 1
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时66.4s | 总耗时178.5min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (320 条)
+
+============================================================
+处理 es_0421... (321/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时89.0s | 总耗时179.9min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (321 条)
+
+============================================================
+处理 es_0422... (322/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时46.8s | 总耗时180.7min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (322 条)
+
+============================================================
+处理 es_0423... (323/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时101.1s | 总耗时182.4min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (323 条)
+
+============================================================
+处理 es_0424... (324/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时59.1s | 总耗时183.4min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (324 条)
+
+============================================================
+处理 es_0425... (325/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时48.0s | 总耗时184.2min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (325 条)
+
+============================================================
+处理 es_0426... (326/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时35.5s | 总耗时184.8min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (326 条)
+
+============================================================
+处理 es_0427... (327/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: select | 选笑话编号: 1
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时42.3s | 总耗时185.5min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (327 条)
+
+============================================================
+处理 es_0428... (328/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时101.4s | 总耗时187.2min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (328 条)
+
+============================================================
+处理 es_0429... (329/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时53.2s | 总耗时188.1min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (329 条)
+
+============================================================
+处理 es_0430... (330/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时89.8s | 总耗时189.6min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (330 条)
+
+============================================================
+处理 es_0431... (331/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: select | 选笑话编号: 1
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时80.2s | 总耗时190.9min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (331 条)
+
+============================================================
+处理 es_0432... (332/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [API] 可重试异常: HTTPSConnectionPool(host='dashscope.aliyuncs.com', port=443): Read timed out. (read timeout=300), 等待1.5s后重试 (1/5), model=qwen3.6-27b
+    [qwen3.6-27b] 决策: select | 选笑话编号: 1
+
+  Item完成: 耗时333.1s | 总耗时196.5min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (332 条)
+
+============================================================
+处理 es_0433... (333/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时93.2s | 总耗时198.0min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (333 条)
+
+============================================================
+处理 es_0434... (334/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时35.5s | 总耗时198.6min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (334 条)
+
+============================================================
+处理 es_0435... (335/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时85.1s | 总耗时200.0min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (335 条)
+
+============================================================
+处理 es_0436... (336/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+
+  Item完成: 耗时30.1s | 总耗时200.5min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (336 条)
+
+============================================================
+处理 es_0437... (337/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时84.2s | 总耗时201.9min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (337 条)
+
+============================================================
+处理 es_0438... (338/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时50.1s | 总耗时202.8min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (338 条)
+
+============================================================
+处理 es_0439... (339/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+
+  Item完成: 耗时40.4s | 总耗时203.5min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (339 条)
+
+============================================================
+处理 es_0440... (340/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时47.7s | 总耗时204.3min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (340 条)
+
+============================================================
+处理 es_0441... (341/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+
+  Item完成: 耗时28.6s | 总耗时204.7min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (341 条)
+
+============================================================
+处理 es_0442... (342/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+
+  Item完成: 耗时57.7s | 总耗时205.7min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (342 条)
+
+============================================================
+处理 es_0443... (343/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时72.3s | 总耗时206.9min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (343 条)
+
+============================================================
+处理 es_0444... (344/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时61.2s | 总耗时207.9min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (344 条)
+
+============================================================
+处理 es_0445... (345/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时41.5s | 总耗时208.6min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (345 条)
+
+============================================================
+处理 es_0446... (346/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时93.0s | 总耗时210.2min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (346 条)
+
+============================================================
+处理 es_0447... (347/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时50.4s | 总耗时211.0min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (347 条)
+
+============================================================
+处理 es_0448... (348/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时53.6s | 总耗时211.9min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (348 条)
+
+============================================================
+处理 es_0449... (349/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时83.4s | 总耗时213.3min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (349 条)
+
+============================================================
+处理 es_0450... (350/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时49.4s | 总耗时214.1min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (350 条)
+
+============================================================
+处理 es_0451... (351/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时49.0s | 总耗时214.9min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (351 条)
+
+============================================================
+处理 es_0452... (352/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时96.0s | 总耗时216.5min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (352 条)
+
+============================================================
+处理 es_0453... (353/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时47.4s | 总耗时217.3min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (353 条)
+
+============================================================
+处理 es_0454... (354/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时59.0s | 总耗时218.3min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (354 条)
+
+============================================================
+处理 es_0455... (355/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时38.0s | 总耗时219.0min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (355 条)
+
+============================================================
+处理 es_0456... (356/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时70.9s | 总耗时220.1min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (356 条)
+
+============================================================
+处理 es_0457... (357/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时61.0s | 总耗时221.2min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (357 条)
+
+============================================================
+处理 es_0458... (358/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 1
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时65.9s | 总耗时222.3min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (358 条)
+
+============================================================
+处理 es_0459... (359/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时58.0s | 总耗时223.2min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (359 条)
+
+============================================================
+处理 es_0460... (360/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时103.5s | 总耗时225.0min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (360 条)
+
+============================================================
+处理 es_0461... (361/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时46.5s | 总耗时225.7min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (361 条)
+
+============================================================
+处理 es_0462... (362/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时74.0s | 总耗时227.0min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (362 条)
+
+============================================================
+处理 es_0463... (363/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时65.8s | 总耗时228.1min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (363 条)
+
+============================================================
+处理 es_0464... (364/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时37.1s | 总耗时228.7min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (364 条)
+
+============================================================
+处理 es_0465... (365/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时55.5s | 总耗时229.6min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (365 条)
+
+============================================================
+处理 es_0466... (366/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+
+  Item完成: 耗时35.7s | 总耗时230.2min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (366 条)
+
+============================================================
+处理 es_0467... (367/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时51.7s | 总耗时231.1min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (367 条)
+
+============================================================
+处理 es_0468... (368/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时69.9s | 总耗时232.2min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (368 条)
+
+============================================================
+处理 es_0469... (369/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时65.6s | 总耗时233.3min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (369 条)
+
+============================================================
+处理 es_0470... (370/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时137.2s | 总耗时235.6min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (370 条)
+
+============================================================
+处理 es_0471... (371/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时69.5s | 总耗时236.8min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (371 条)
+
+============================================================
+处理 es_0472... (372/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时49.4s | 总耗时237.6min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (372 条)
+
+============================================================
+处理 es_0473... (373/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时56.8s | 总耗时238.6min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (373 条)
+
+============================================================
+处理 es_0474... (374/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时64.3s | 总耗时239.6min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (374 条)
+
+============================================================
+处理 es_0475... (375/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时62.6s | 总耗时240.7min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (375 条)
+
+============================================================
+处理 es_0476... (376/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时95.7s | 总耗时242.3min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (376 条)
+
+============================================================
+处理 es_0477... (377/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [API] 可重试异常: HTTPSConnectionPool(host='dashscope.aliyuncs.com', port=443): Read timed out. (read timeout=300), 等待1.8s后重试 (1/5), model=qwen3.6-27b
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+
+  Item完成: 耗时328.6s | 总耗时247.8min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (377 条)
+
+============================================================
+处理 es_0478... (378/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时62.6s | 总耗时248.8min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (378 条)
+
+============================================================
+处理 es_0479... (379/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时64.5s | 总耗时249.9min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (379 条)
+
+============================================================
+处理 es_0480... (380/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时62.5s | 总耗时250.9min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (380 条)
+
+============================================================
+处理 es_0481... (381/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时63.5s | 总耗时252.0min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (381 条)
+
+============================================================
+处理 es_0482... (382/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时62.8s | 总耗时253.0min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (382 条)
+
+============================================================
+处理 es_0483... (383/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时54.8s | 总耗时253.9min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (383 条)
+
+============================================================
+处理 es_0484... (384/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时74.3s | 总耗时255.2min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (384 条)
+
+============================================================
+处理 es_0485... (385/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [API] 可重试异常: HTTPSConnectionPool(host='dashscope.aliyuncs.com', port=443): Read timed out. (read timeout=300), 等待2.1s后重试 (1/5), model=qwen3.6-27b
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+
+  Item完成: 耗时316.7s | 总耗时260.5min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (385 条)
+
+============================================================
+处理 es_0486... (386/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时51.1s | 总耗时261.3min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (386 条)
+
+============================================================
+处理 es_0487... (387/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时59.1s | 总耗时262.3min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (387 条)
+
+============================================================
+处理 es_0488... (388/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时73.7s | 总耗时263.5min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (388 条)
+
+============================================================
+处理 es_0489... (389/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时79.3s | 总耗时264.9min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (389 条)
+
+============================================================
+处理 es_0490... (390/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时103.1s | 总耗时266.6min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (390 条)
+
+============================================================
+处理 es_0491... (391/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时65.0s | 总耗时267.7min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (391 条)
+
+============================================================
+处理 es_0492... (392/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时46.1s | 总耗时268.4min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (392 条)
+
+============================================================
+处理 es_0493... (393/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 1
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时42.4s | 总耗时269.1min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (393 条)
+
+============================================================
+处理 es_0494... (394/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时46.0s | 总耗时269.9min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (394 条)
+
+============================================================
+处理 es_0495... (395/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时44.0s | 总耗时270.7min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (395 条)
+
+============================================================
+处理 es_0496... (396/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 1
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时66.7s | 总耗时271.8min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (396 条)
+
+============================================================
+处理 es_0497... (397/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时53.5s | 总耗时272.7min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (397 条)
+
+============================================================
+处理 es_0498... (398/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 1
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时52.7s | 总耗时273.5min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (398 条)
+
+============================================================
+处理 es_0499... (399/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时51.9s | 总耗时274.4min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (399 条)
+
+============================================================
+处理 es_0500... (400/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时60.7s | 总耗时275.4min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (400 条)
+
+============================================================
+处理 es_0501... (401/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时75.5s | 总耗时276.7min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (401 条)
+
+============================================================
+处理 es_0502... (402/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时55.5s | 总耗时277.6min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (402 条)
+
+============================================================
+处理 es_0503... (403/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时152.4s | 总耗时280.1min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (403 条)
+
+============================================================
+处理 es_0504... (404/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: select | 选笑话编号: 3
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时42.1s | 总耗时280.9min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (404 条)
+
+============================================================
+处理 es_0505... (405/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时51.8s | 总耗时281.7min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (405 条)
+
+============================================================
+处理 es_0506... (406/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 4
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [API] 可重试异常: HTTPSConnectionPool(host='dashscope.aliyuncs.com', port=443): Read timed out. (read timeout=300), 等待2.1s后重试 (1/5), model=qwen3.6-27b
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时350.9s | 总耗时287.6min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (406 条)
+
+============================================================
+处理 es_0507... (407/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时107.8s | 总耗时289.4min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (407 条)
+
+============================================================
+处理 es_0508... (408/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时73.9s | 总耗时290.6min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (408 条)
+
+============================================================
+处理 es_0509... (409/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [API] 可重试异常: HTTPSConnectionPool(host='dashscope.aliyuncs.com', port=443): Read timed out. (read timeout=300), 等待1.5s后重试 (1/5), model=qwen3.6-27b
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+
+  Item完成: 耗时333.6s | 总耗时296.2min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (409 条)
+
+============================================================
+处理 es_0510... (410/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API    [路由] qwen3.6-27b -> DashScope API
+
+    [路由] qwen3.6-27b -> DashScope API
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+    [qwen3.6-27b] 决策: select | 选笑话编号: 2
+    [qwen3.6-27b] 决策: create | 选笑话编号: None
+
+  Item完成: 耗时37.5s | 总耗时296.8min
+  速率限制器状态: 可用令牌=960.0/960
+  已保存中间结果 (410 条)
+
+============================================================
+处理 es_0511... (411/1375)
+  质量组: high (4个候选笑话)
+  质量组: medium (4个候选笑话)
+  质量组: low (4个候选笑话)
+  并发执行 3 个评估任务 (max_workers=3)...
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
+    [路由] qwen3.6-27b -> DashScope API
