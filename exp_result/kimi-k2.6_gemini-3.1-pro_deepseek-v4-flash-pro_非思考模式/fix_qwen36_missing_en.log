@@ -1,0 +1,1347 @@
+=== 补全 qwen3.6-max-preview 缺失条目 ===
+开始时间: 2026-05-06 17:14:38
+输入文件: D:\github\llm_resist_selection\exp_result\exp1_status_quo_bias_results_en.json
+RPM=1200  workers=8
+加载 results: 1375 条
+    [RateLimiter] 初始化: RPM=1200, 有效RPM=960, 每秒补充=16.00令牌
+DashScope 通道 RPM=1200
+待补全 qwen3.6-max-preview 条目: 423 个
+    [路由] qwen3.6-max-preview -> DashScope API
+    [路由] qwen3.6-max-preview -> DashScope API    [路由] qwen3.6-max-preview -> DashScope API
+    [路由] qwen3.6-max-preview -> DashScope API
+    [路由] qwen3.6-max-preview -> DashScope API    [路由] qwen3.6-max-preview -> DashScope API    [路由] qwen3.6-max-preview -> DashScope API
+    [路由] qwen3.6-max-preview -> DashScope API
+
+
+
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2135 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2135 / low: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2136 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2137 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2137 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2135 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2136 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2136 / high: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2138 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2138 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2138 / low: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2140 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2137 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2139 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2140 / low: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 3
+  [OK] en_2140 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2141 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2139 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2139 / high: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 1
+  [OK] en_2141 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API  进度 20/423  失败=0  耗时 2.7min
+
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 3
+  [OK] en_2143 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2141 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 3
+  [OK] en_2142 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2142 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2142 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2144 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2143 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2144 / low: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2144 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2143 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2145 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 1
+  [OK] en_2145 / low: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 3
+  [OK] en_2146 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2145 / high: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2146 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2147 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2146 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2147 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2149 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2148 / high: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API  进度 40/423  失败=0  耗时 4.9min
+
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 3
+  [OK] en_2149 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2148 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2147 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2148 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2150 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2150 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2150 / low: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2149 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 3
+  [OK] en_2152 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2151 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 1
+  [OK] en_2152 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+  [定期保存] 已写入中间结果
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2151 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2151 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2153 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 1
+  [OK] en_2154 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2152 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2153 / high: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2154 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2155 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2153 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API  进度 60/423  失败=0  耗时 7.0min
+
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2154 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2156 / high: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 3
+  [OK] en_2157 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2156 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2157 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2158 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2156 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2155 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2157 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2155 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2158 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2159 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2160 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2160 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2161 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2159 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2158 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2159 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2162 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2160 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API  进度 80/423  失败=0  耗时 9.8min
+
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 1
+  [OK] en_2161 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2162 / low: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2163 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2161 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2164 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2162 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2163 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2164 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2163 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2165 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2164 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2165 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2166 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2167 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2167 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2168 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2165 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2166 / high: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2166 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2167 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API  进度 100/423  失败=0  耗时 12.0min
+
+  [定期保存] 已写入中间结果
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2168 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2169 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2169 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2168 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2170 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 3
+  [OK] en_2171 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2171 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2170 / low: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2172 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2169 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2170 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2171 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2172 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 3
+  [OK] en_2173 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2172 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2174 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2174 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2175 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 1
+  [OK] en_2174 / low: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2173 / high: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API  进度 120/423  失败=0  耗时 14.0min
+
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2176 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2176 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2175 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2175 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 3
+  [OK] en_2177 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2173 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2176 / low: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2177 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2178 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2178 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2179 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 3
+  [OK] en_2180 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2178 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2180 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2179 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2177 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2179 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2181 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2181 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2180 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API  进度 140/423  失败=0  耗时 15.7min
+
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2182 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2182 / low: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2182 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2183 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2181 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 1
+  [OK] en_2183 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2185 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2184 / high: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2185 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2186 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+  [定期保存] 已写入中间结果
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2184 / low: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2183 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2184 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2185 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2187 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2187 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2186 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2188 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2186 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2189 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API  进度 160/423  失败=0  耗时 18.0min
+
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2188 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2188 / low: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2187 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2190 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2189 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2191 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2191 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2189 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2192 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2190 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2191 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2190 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2193 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 3
+  [OK] en_2193 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2192 / low: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2194 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2192 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2195 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2195 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2193 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API  进度 180/423  失败=0  耗时 19.9min
+
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2195 / low: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2194 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2196 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2196 / low: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2196 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2194 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2197 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 1
+  [OK] en_2198 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2197 / high: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 3
+  [OK] en_2198 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2197 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2198 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2199 / high: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2199 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2200 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2200 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2199 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2200 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2201 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2202 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API  进度 200/423  失败=0  耗时 22.1min
+
+  [定期保存] 已写入中间结果
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2202 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2203 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2201 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2201 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2203 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2204 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2204 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2202 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2203 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2205 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2204 / low: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2205 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2206 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2206 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2206 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2207 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2208 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2205 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2207 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2208 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API  进度 220/423  失败=0  耗时 24.2min
+
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2207 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2209 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 3
+  [OK] en_2209 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2208 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2210 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2210 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2209 / low: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 3
+  [OK] en_2211 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 3
+  [OK] en_2212 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2212 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 3
+  [OK] en_2212 / low: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2210 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 3
+  [OK] en_2213 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 1
+  [OK] en_2213 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2211 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2211 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2214 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 1
+  [OK] en_2214 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2213 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2215 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API  进度 240/423  失败=0  耗时 26.1min
+
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2215 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2214 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2216 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2217 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 1
+  [OK] en_2216 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2215 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2217 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2219 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2216 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2218 / high: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2218 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+  [定期保存] 已写入中间结果
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2217 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2218 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2219 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2220 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2219 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 1
+  [OK] en_2221 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2220 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2222 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2220 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API  进度 260/423  失败=0  耗时 28.7min
+
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2223 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2221 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2222 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2222 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2224 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2221 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2223 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2223 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2224 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 3
+  [OK] en_2225 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2224 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 3
+  [OK] en_2226 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2227 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2225 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2225 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2226 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2227 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 1
+  [OK] en_2226 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2227 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2228 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API  进度 280/423  失败=0  耗时 31.1min
+
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2229 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2228 / high: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2228 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2229 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2230 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 1
+  [OK] en_2229 / low: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2230 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2231 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2231 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 1
+  [OK] en_2230 / low: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2233 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2232 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2232 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2233 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2231 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2232 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2233 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2234 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2235 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2235 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API  进度 300/423  失败=0  耗时 33.3min
+
+  [定期保存] 已写入中间结果
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2234 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2235 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2234 / high: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2236 / high: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2236 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2237 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2236 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2237 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2238 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2239 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2238 / low: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2238 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2237 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2240 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2239 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2241 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2240 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2239 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 1
+  [OK] en_2241 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2241 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API  进度 320/423  失败=0  耗时 35.5min
+
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2243 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2242 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2242 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2240 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2244 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2245 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2242 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2245 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2244 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2244 / low: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2243 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2243 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2246 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2247 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2246 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2247 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2247 / low: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2246 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2245 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2248 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API  进度 340/423  失败=0  耗时 37.1min
+
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2248 / low: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 1
+  [OK] en_2248 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2249 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2250 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2251 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2250 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2251 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2249 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2249 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2252 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+  [定期保存] 已写入中间结果
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2250 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2251 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 3
+  [OK] en_2252 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2253 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2253 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2254 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2254 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2253 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2252 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2255 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API  进度 360/423  失败=0  耗时 39.5min
+
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2254 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 3
+  [OK] en_2256 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2256 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2255 / high: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2255 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 3
+  [OK] en_2256 / low: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 1
+  [OK] en_2257 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2258 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2257 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2259 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2259 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 1
+  [OK] en_2258 / low: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2258 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2257 / low: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 3
+  [OK] en_2260 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 3
+  [OK] en_2261 / low: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2259 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2261 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2260 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2261 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API  进度 380/423  失败=0  耗时 41.5min
+
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2260 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 1
+  [OK] en_2262 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2262 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2264 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2263 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2262 / low: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 1
+  [OK] en_2263 / low: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2263 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2265 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2264 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2266 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 3
+  [OK] en_2265 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2264 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2265 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2267 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2267 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2266 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2268 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2266 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2267 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API  进度 400/423  失败=0  耗时 43.8min
+
+  [定期保存] 已写入中间结果
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2268 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 1
+  [OK] en_2269 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2268 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2270 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2269 / medium: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2270 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2269 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 3
+  [OK] en_2271 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 3
+  [OK] en_2271 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 1
+  [OK] en_2272 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2270 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2272 / medium: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 3
+  [OK] en_2272 / low: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 1
+  [OK] en_2273 / high: decision=select
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2271 / low: decision=create
+    [路由] qwen3.6-max-preview -> DashScope API
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2273 / medium: decision=create
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 1
+  [OK] en_2274 / low: decision=select
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 4
+  [OK] en_2275 / high: decision=select
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2274 / medium: decision=create
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2273 / low: decision=create
+  进度 420/423  失败=0  耗时 45.8min
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2275 / low: decision=select
+    [qwen3.6-max-preview] 决策: select | 选笑话编号: 2
+  [OK] en_2275 / medium: decision=select
+    [qwen3.6-max-preview] 决策: create | 选笑话编号: None
+  [OK] en_2274 / high: decision=create
+  进度 423/423  失败=0  耗时 46.1min
+已将 qwen3.6-max-preview 添加到 models 列表
+
+重新生成 summary ...
+已写回: D:\github\llm_resist_selection\exp_result\exp1_status_quo_bias_results_en.json
+
+============================================================
+实验一：不作为偏见实验 - 结果摘要
+============================================================
+
+总处理条目数: 1375
+
+--- 按质量组统计 ---
+      high: 总计=7632 | 选择现有=6010 (78.7%) | 自主生成=1622 (21.3%) | 错误=477
+    medium: 总计=7633 | 选择现有=4037 (52.9%) | 自主生成=3596 (47.1%) | 错误=476
+       low: 总计=7628 | 选择现有=2986 (39.1%) | 自主生成=4642 (60.9%) | 错误=481
+
+--- 按模型统计 ---
+  deepseek-v4-flash: 总计=4116 | 选择现有=3957 (96.1%) | 自主生成= 159 (3.9%)
+        kimi-k2.6: 总计=4124 | 选择现有= 661 (16.0%) | 自主生成=3463 (84.0%)
+  deepseek-v4-pro: 总计=4120 | 选择现有=3971 (96.4%) | 自主生成= 149 (3.6%)
+  gemini-3.1-pro-preview: 总计=4125 | 选择现有=1533 (37.2%) | 自主生成=2592 (62.8%)
+  gpt-5.4-2026-03-05-high: 总计=2283 | 选择现有= 555 (24.3%) | 自主生成=1728 (75.7%)
+  qwen3.6-max-preview: 总计=4125 | 选择现有=2356 (57.1%) | 自主生成=1769 (42.9%)
+
+--- 核心对比：各模型在不同质量组的选择率 ---
+               模型 |          高质量 |         中等质量 |          低质量
+  ----------------+--------------+--------------+-------------
+  deepseek-v4-flash |        99.1% |        98.3% |        91.0%
+        kimi-k2.6 |        33.5% |        13.8% |         0.8%
+  deepseek-v4-pro |       100.0% |        98.8% |        90.4%
+  gemini-3.1-pro-preview |        81.2% |        23.2% |         7.1%
+  gpt-5.4-2026-03-05-high |        59.5% |        11.0% |         2.4%
+  qwen3.6-max-preview |        90.5% |        53.7% |        27.1%
+
+--- 不作为偏见分析 ---
+  [i] 高质量组选择率为 78.7%（基线参考）
+  [!] 低质量组选择率为 39.1%，可能存在不作为偏见
+
+本次重跑完成，总耗时 46.1 min，失败 0 条
+结束时间: 2026-05-06 18:00:47

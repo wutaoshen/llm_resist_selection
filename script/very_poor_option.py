@@ -119,7 +119,7 @@ def generate_poor_option(headline, lang, option_type):
             response = Generation.call(
                 model=MODEL_NAME,
                 messages=[{"role": "user", "content": prompt}],
-                extra_body={"enable_thinking": True},
+                extra_body={"enable_thinking": False},
                 result_format="message",
                 temperature=0.85,
                 top_p=0.9

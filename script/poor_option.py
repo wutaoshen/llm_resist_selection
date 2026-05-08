@@ -3,21 +3,27 @@
 #   低质量(low): Forced_Pun, Overexplained_Joke, Cliche_Joke, Weak_Connection
 #   中等质量(medium): Safe_Humor, Predictable_Punchline, Surface_Level, Generic_Wit
 #   高质量(high): 复用 good_option.py 输出，不在此脚本生成
-import dashscope
-from dashscope import Generation
+import sys
 import json
-import time
 import os
+import time
+from dashscope import Generation
 
-# 设置DashScope API密钥
-dashscope.api_key = os.getenv("DASHSCOPE_API_KEY")
-
-# 获取脚本所在目录的绝对路径
+# 将项目根目录加入路径，以便导入 utils
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
+sys.path.insert(0, PROJECT_ROOT)
+
+from utils import get_rate_limiter, RetryConfig, is_rate_limit_error, is_retryable_error
 
 # 使用的模型
 MODEL_NAME = "deepseek-v3.2"
+
+# 重试配置（指数退避）
+RETRY_CONFIG = RetryConfig(max_retries=3, base_delay=2.0, max_delay=30.0)
+
+# 速率限制器（单例）
+_rate_limiter = get_rate_limiter("dashscope", rpm=600)
 
 # 质量等级定义
 QUALITY_LEVELS = ["low", "medium"]  # high 由 good_option.py 生成
@@ -119,7 +125,7 @@ Titular: "{headline}"
 
 Solo devuelve el chiste (con su sobre-explicación) y nada más. La respuesta debe estar en español.""",
 
-        "Cliche_Joke": """Dado el siguiente titular de noticias, crea un chiste usando un formato EXTREMADAMENTE CLICHÉ y SOBREUSADO. Usa patrones trillados como "¿Por qué el X cruzó la calle?", "¿Cómo se llama un X?", "Un X entra en un bar..." u otros formatos predecibles. El chiste debe sentirse gastado y poco original.
+        "Cliche_Joke": """Dado el siguiente titular de noticias, crea un chiste usando un formato EXTREMADAMENTE CLICHÉ y SOBREUSADO de la tradición humorística hispana. Usa patrones trillados como los "chistes de Jaimito/Pepito", "¿Cuál es el colmo de...?", "¿Qué le dice un X a un Y?", "¿En qué se parece X a Y?" u otros formatos clásicos del humor en español. El chiste debe sentirse gastado y poco original.
 
 Restricciones de calidad IMPORTANTES: Este chiste NO debería hacer reír genuinamente a nadie. Debe sentirse como un chiste reciclado de un libro de chistes de los años 90. El lector debería reconocer inmediatamente que ha escuchado este formato cientos de veces y sentir cero sorpresa.
 
@@ -253,39 +259,51 @@ def generate_option(headline, lang, option_type, quality_level):
 
     # 低质量使用高temperature增加随机性和不连贯感，中等质量用低temperature保持流畅但平庸
     temperature = 1.2 if quality_level == "low" else 0.6
+    top_p = 0.95 if quality_level == "low" else 0.7
 
-    max_retries = 3
-    retry_delay = 1
-
-    for attempt in range(max_retries):
+    for attempt in range(RETRY_CONFIG.max_retries):
         try:
+            if not _rate_limiter.acquire(timeout=120):
+                print(f"  [RateLimiter] 获取令牌超时, 跳过本次尝试")
+                continue
+
             response = Generation.call(
                 model=MODEL_NAME,
                 messages=[{"role": "user", "content": prompt}],
-                extra_body={"enable_thinking": True},
+                extra_body={"enable_thinking": False},
                 result_format="message",
                 temperature=temperature,
-                top_p=0.95 if quality_level == "low" else 0.7
+                top_p=top_p
             )
 
             if response.status_code == 200:
                 content = response.output.choices[0].message.content
                 return content.strip()
             else:
-                if attempt < max_retries - 1:
-                    print(f"  API调用失败 (尝试 {attempt + 1}/{max_retries}): {response.code}")
-                    time.sleep(retry_delay)
+                status_code = response.status_code
+                error_msg = getattr(response, 'message', str(response))
+                if is_retryable_error(error_msg, status_code) and attempt < RETRY_CONFIG.max_retries - 1:
+                    delay = RETRY_CONFIG.get_delay(attempt)
+                    keyword = "速率限制" if is_rate_limit_error(error_msg, status_code) else "可重试"
+                    print(f"  [{keyword}错误] (状态码={status_code}), 等待{delay:.1f}s后重试 "
+                          f"({attempt + 1}/{RETRY_CONFIG.max_retries})")
+                    time.sleep(delay)
                     continue
                 else:
-                    return {"error": True, "message": f"API调用失败: {response.code} - {response.message}"}
+                    return {"error": True, "message": f"API调用失败: {response.code} - {error_msg}"}
 
         except Exception as e:
-            if attempt < max_retries - 1:
-                print(f"  处理异常 (尝试 {attempt + 1}/{max_retries}): {str(e)}")
-                time.sleep(retry_delay)
+            error_str = str(e)
+            if is_retryable_error(e) and attempt < RETRY_CONFIG.max_retries - 1:
+                delay = RETRY_CONFIG.get_delay(attempt)
+                print(f"  [可重试异常] {error_str[:100]}, 等待{delay:.1f}s后重试 "
+                      f"({attempt + 1}/{RETRY_CONFIG.max_retries})")
+                time.sleep(delay)
                 continue
             else:
-                return {"error": True, "message": f"处理异常: {str(e)}"}
+                return {"error": True, "message": f"处理异常: {error_str}"}
+
+    return {"error": True, "message": "API调用失败，已达最大重试次数"}
 
 
 def generate_all_options(headline, lang, quality_level):
@@ -311,8 +329,6 @@ def generate_all_options(headline, lang, quality_level):
             display = result[:50] + "..." if len(result) > 50 else result
             print(f"    -> {display}")
 
-        # 每次API调用间隔，避免限流
-        time.sleep(0.5)
 
     return results
 
@@ -364,7 +380,8 @@ def process_headlines(input_file, output_file, lang, quality_level, resume=True)
 
         # 统计错误数
         for opt_type in option_types:
-            if options[opt_type].startswith("[ERROR]"):
+            val = options.get(opt_type, "")
+            if isinstance(val, str) and val.startswith("[ERROR]"):
                 error_count += 1
 
         # 构建输出结果

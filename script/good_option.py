@@ -74,7 +74,7 @@ def generate_joke(headline, lang, modelname="qwen-max"):
                     api_key=dashscope.api_key,
                     model=modelname,
                     messages=messages,
-                    extra_body={"enable_thinking": True},
+                    extra_body={"enable_thinking": False},
                     temperature=0.85,
                     top_p=0.9
                 )
@@ -100,7 +100,7 @@ def generate_joke(headline, lang, modelname="qwen-max"):
                 response = Generation.call(
                     model=modelname,
                     messages=[{"role": "user", "content": prompt}],
-                    extra_body={"enable_thinking": True},
+                    extra_body={"enable_thinking": False},
                     result_format="message",
                     temperature=0.85,
                     top_p=0.9
