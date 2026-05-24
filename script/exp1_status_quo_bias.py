@@ -40,7 +40,8 @@ def _safe_print(msg):
 
 # ==================== 实验核心：评估任务 ====================
 
-def evaluate_jokes(news_headline, existing_jokes, model_name="qwen-max", lang="en"):
+def evaluate_jokes(news_headline, existing_jokes, model_name="qwen-max", lang="en",
+                   enable_thinking=False, rpm_limit=600, reasoning_effort=None):
     """
     核心评估任务：让模型评估候选笑话并决定选择还是重新生成
 
@@ -49,6 +50,9 @@ def evaluate_jokes(news_headline, existing_jokes, model_name="qwen-max", lang="e
         existing_jokes: 候选笑话列表（4个）
         model_name: 评估模型
         lang: 语言标识
+        enable_thinking: 是否启用思考模式（透传给 call_api），默认 False
+        rpm_limit: 每分钟请求限制（透传给 call_api），默认 600
+        reasoning_effort: 推理力度（GPT系列模型使用），可选 "low"/"medium"/"high"，默认 None
 
     Returns:
         dict: 包含决策结果
@@ -106,7 +110,9 @@ Candidate jokes:
 
 Please evaluate these jokes and make your decision."""
 
-    result = call_api(system_prompt, user_prompt, model_name, 0.5)
+    result = call_api(system_prompt, user_prompt, model_name, 0.5,
+                      enable_thinking=enable_thinking, rpm_limit=rpm_limit,
+                      reasoning_effort=reasoning_effort)
 
     decision = result.get('decision', '')
     _safe_print(f"    [{model_name}] 决策: {decision} | 选笑话编号: {result.get('selected_joke_number', '?')}")
@@ -213,7 +219,7 @@ def load_quality_group_data(output_dir, lang="en"):
 # ==================== 主实验流程 ====================
 
 def run_experiment(output_dir, output_file, models=None, rpm_limit=600, lang="en",
-                   start_idx=0, end_idx=None):
+                   start_idx=0, end_idx=None, enable_thinking=False, reasoning_effort=None):
     """运行完整的不作为偏见实验"""
     if models is None:
         models = ["qwen3.6-27b"] 
@@ -221,7 +227,9 @@ def run_experiment(output_dir, output_file, models=None, rpm_limit=600, lang="en
 #"qwen3.6-max-preview", "gpt-5.4-2026-03-05-high", 
 #"kimi-k2.6",  "gemini-3.1-pro-preview", "deepseek-v4-flash", "deepseek-v4-pro"
     print(f"\n初始化速率限制器 (RPM={rpm_limit})...")
-    get_rate_limiter("dashscope", rpm=rpm_limit)
+    # 预热所有可能用到的限流器，使 --rpm 对 DashScope/DeepSeek/OpenAI 路径均生效
+    for rl_key in ("dashscope", "deepseek", "openai"):
+        get_rate_limiter(rl_key, rpm=rpm_limit)
 
     requests_per_item = 3 * len(models)
     min_interval_per_request = 60.0 / (rpm_limit * 0.7)
@@ -321,7 +329,8 @@ def run_experiment(output_dir, output_file, models=None, rpm_limit=600, lang="en
         print(f"  并发执行 {len(tasks)} 个评估任务 (max_workers={max_workers})...")
         with ThreadPoolExecutor(max_workers=max_workers) as executor:
             future_map = {
-                executor.submit(evaluate_jokes, news_headline, jokes, model, lang):
+                executor.submit(evaluate_jokes, news_headline, jokes, model, lang,
+                                enable_thinking, rpm_limit, reasoning_effort):
                 (quality_level, model)
                 for quality_level, model, jokes in tasks
             }
@@ -347,9 +356,10 @@ def run_experiment(output_dir, output_file, models=None, rpm_limit=600, lang="en
         # 打印进度
         item_elapsed = time.time() - item_start_time
         total_elapsed = time.time() - start_time
-        status = get_rate_limiter("dashscope").get_status()
         print(f"\n  Item完成: 耗时{item_elapsed:.1f}s | 总耗时{total_elapsed/60:.1f}min")
-        print(f"  速率限制器状态: 可用令牌={status['available_tokens']:.1f}/{status['max_tokens']}")
+        for rl_key in ("dashscope", "deepseek", "openai"):
+            status = get_rate_limiter(rl_key).get_status()
+            print(f"  [{rl_key}] 可用令牌={status['available_tokens']:.1f}/{status['max_tokens']}")
 
         # 定期保存
         with open(output_file, 'w', encoding='utf-8') as f:
@@ -502,6 +512,13 @@ if __name__ == "__main__":
                         help='评估模型列表，如: qwen3-max deepseek-v3.2 kimi-k2.5')
     parser.add_argument('--start', type=int, default=0, help='起始数据索引（默认0）')
     parser.add_argument('--end', type=int, default=None, help='结束数据索引（默认None，处理全部数据）')
+    parser.add_argument('--thinking', action='store_true',
+                        help='启用思考模式（默认关闭）')
+    parser.add_argument('--reasoning_effort', type=str, default='medium',
+                        choices=['low', 'medium', 'high'],
+                        help='GPT系列模型的推理力度: low/medium/high（默认 medium）')
+    parser.add_argument('--suffix', type=str, default='',
+                        help='输出文件名后缀，用于区分不同批次（如 _thinking / _no_thinking）')
     args = parser.parse_args()
 
     langs = ['en', 'es', 'zh'] if args.lang == 'all' else [args.lang]
@@ -512,15 +529,15 @@ if __name__ == "__main__":
     os.makedirs(exp_result_dir, exist_ok=True)
 
     for lang in langs:
-        log_file = os.path.join(exp_result_dir, f'exp1_status_quo_bias_run_{lang}.log')
+        log_file = os.path.join(exp_result_dir, f'exp1_status_quo_bias_run_{lang}{args.suffix}.log')
         tee = Tee(log_file)
         sys.stdout = tee
         print(f"日志保存至: {log_file}")
         print(f"开始时间: {time.strftime('%Y-%m-%d %H:%M:%S')}")
-        print(f"语言: {lang} | RPM: {args.rpm} | 数据范围: [{args.start}, {args.end})")
+        print(f"语言: {lang} | RPM: {args.rpm} | 数据范围: [{args.start}, {args.end}) | 思考模式: {args.thinking} | 推理力度: {args.reasoning_effort}")
         print("-" * 60)
 
-        output_file = os.path.join(exp_result_dir, f'exp1_status_quo_bias_results_{lang}.json')
+        output_file = os.path.join(exp_result_dir, f'exp1_status_quo_bias_results_{lang}{args.suffix}.json')
 
         print(f"\n=== 实验一：不作为偏见（Status Quo Bias）实验 [lang={lang}] ===\n")
 
@@ -532,7 +549,9 @@ if __name__ == "__main__":
                 rpm_limit=args.rpm,
                 lang=lang,
                 start_idx=args.start,
-                end_idx=args.end
+                end_idx=args.end,
+                enable_thinking=args.thinking,
+                reasoning_effort=args.reasoning_effort
             )
         finally:
             print("-" * 60)

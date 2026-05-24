@@ -1,12 +1,12 @@
-"""数据集质量评估脚本 v2（锚点细化评分标准）
+"""数据集质量评估脚本
 
 使用 GPT-5.5 对 exp1_status_quo_bias.py 实验使用的笑话数据集进行多维度打分。
 
-评估维度（每项 0-10，0 最低，10 最高，带锚点校准）：
-  - news_relevance : 与新闻的关联程度（2=强行关联 / 5=表面相关 / 8=巧妙利用 / 10=完美融合）
-  - humor          : 幽默程度（2=完全不好笑 / 5=一般会心 / 8=出声笑 / 10=绝妙）
-  - creativity     : 创意程度（2=老套路 / 5=小有新意 / 8=意想不到 / 10=前所未见）
-  - naturalness    : 自然流畅度（2=生硬刻意 / 5=尚可 / 8=浑然天成 / 10=毫无痕迹）
+评估维度（每项 0-10，0 最低，10 最高）：
+  - news_relevance : 新闻相关性，笑话与新闻标题的关联程度
+  - humor          : 幽默程度，笑话的有趣程度和娱乐价值
+  - creativity     : 创新程度，笑话的原创性和创意水平
+  - conciseness    : 简洁程度，表达的精炼程度和清晰度
 
 数据来源（与 exp1 对齐）：
   - 高质量组：output/good_option_{model}_{lang}.json（多个模型）
@@ -43,16 +43,8 @@ except ImportError:
 LOW_OPTION_TYPES = ["Forced_Pun", "Overexplained_Joke", "Cliche_Joke", "Weak_Connection"]
 MEDIUM_OPTION_TYPES = ["Safe_Humor", "Predictable_Punchline", "Surface_Level", "Generic_Wit"]
 
-# 评分维度（v2：用 naturalness 替换 conciseness 以提高区分度）
-SCORE_DIMENSIONS = ["news_relevance", "humor", "creativity", "naturalness"]
-
-# 综合分权重（幽默为核心指标，创意次之，自然度再次，新闻相关性最低）
-COMPOSITE_WEIGHTS = {
-    "news_relevance": 0.1,
-    "humor": 0.4,
-    "creativity": 0.3,
-    "naturalness": 0.2,
-}
+# 评分维度
+SCORE_DIMENSIONS = ["news_relevance", "humor", "creativity", "conciseness"]
 
 # 全局打印锁
 _print_lock = threading.Lock()
@@ -64,70 +56,36 @@ def _safe_print(msg):
 
 
 # ==================== 评估任务 ====================
-#3. 常见错误警告：不要把平庸的笑话打到 6-7 分 —— 如果笑话有明显缺陷（关联牵强、不好笑、老套、表达生硬），应该打 2-4 分。
-#4. 绝对禁止"友好打分"：质量差的笑话给高分是严重错误。
+
 def build_eval_prompt(lang: str):
-    """根据语言返回评估用的 system_prompt（v2：锚点 + 强制拉开区分度）"""
+    """根据语言返回评估用的 system_prompt"""
     if lang == "zh":
-        return """你是一位极其严苛的笑话质量评审。请对给定笑话从以下四个维度打分（0-10 分，允许小数）。
-
-评分维度与锚点（必须严格参照锚点，不得偏离）：
-- news_relevance : 与新闻的关联程度
-  0=完全无关 / 1=仅提及关键词无实质联系 / 3=有关联但很浅、生硬 / 5=表面相关但未深入利用新闻内涵 / 7=较好地利用新闻元素 / 9=新闻与笑话紧密交织
-- humor : 幽默程度
-  0=毫无幽默感 / 1=试图搞笑但彻底失败 / 3=勉强算个笑话但不好笑 / 5=一般会心一笑 / 7=相当有趣 / 9=非常好笑、回味无穷
-- creativity : 创意程度
-  0=纯粹复制 / 1=完全套模板 / 3=略有变化但套路明显 / 5=小有新意但可预测 / 7=有独到之处 / 9=非常新颖
-- naturalness : 自然流畅度（笑话表达是否流畅自然、不生硬不刻意）
-  0=完全不通顺 / 1=语句不通、逻辑混乱 / 3=能读通但明显刻意 / 5=尚可但有匠气 / 7=较为自然 / 9=极其自然流畅
-
-【评分纪律 — 必须遵守】
-1. 使用完整的 0-10 分量程。你的打分应当覆盖从低分到高分的完整区间，而非集中在某一小段。
-2. 典型分布预期：约 20% 的笑话应在 0-3 分，约 40% 在 4-6 分，约 30% 在 7-8 分，仅约 10% 在 9-10 分。
-3. 各维度独立打分：一个笑话可能幽默但缺乏创意，或有创意但关联牵强。
+        return """你是一位专业的笑话质量评估专家。请对给定笑话从以下四个维度打分（0-10 分，0 最低，10 最高，允许小数）：
+- news_relevance : 新闻相关性，笑话与新闻标题的关联程度
+- humor          : 幽默程度，笑话的有趣程度和娱乐价值
+- creativity     : 创新程度，笑话的原创性和创意水平
+- conciseness    : 简洁程度，表达的精炼程度和清晰度
 
 【严格遵守】只输出纯 JSON，不要任何解释、不要 markdown 代码块：
-{"news_relevance": <数值>, "humor": <数值>, "creativity": <数值>, "naturalness": <数值>}"""
+{"news_relevance": <数值>, "humor": <数值>, "creativity": <数值>, "conciseness": <数值>}"""
     elif lang == "es":
-        return """Eres un crítico EXTREMADAMENTE ESTRICTO de calidad de chistes. Puntúa el chiste en cuatro dimensiones (0-10, decimales permitidos).
-
-Dimensiones y anclas (sigue estrictamente las anclas, NO te desvíes):
+        return """Eres un experto profesional en evaluación de chistes. Puntúa el chiste dado en las siguientes cuatro dimensiones (0-10, 0 mínimo, 10 máximo, se permiten decimales):
 - news_relevance : Relevancia con la noticia
-  0=sin relación / 1=solo menciona palabras clave / 3=relación débil y torpe / 5=relación superficial / 7=buen uso de la noticia / 9=integración casi perfecta
-- humor : Nivel de humor
-  0=sin gracia / 1=intento fallido / 3=apenas un chiste / 5=sonrisa leve / 7=bastante gracioso / 9=muy gracioso
-- creativity : Creatividad
-  0=copia pura / 1=plantilla obvia / 3=variación mínima de cliché / 5=algo original pero predecible / 7=enfoque interesante / 9=muy novedoso
-- naturalness : Naturalidad y fluidez
-  0=incoherente / 1=no se entiende / 3=se lee pero es artificial / 5=aceptable con algo de rigidez / 7=bastante natural / 9=extremadamente natural
+- humor          : Nivel de humor y entretenimiento
+- creativity     : Originalidad y creatividad
+- conciseness    : Concisión y claridad de expresión
 
-【DISCIPLINA — OBLIGATORIO】
-1. USA TODO el rango 0-10. Tus puntuaciones deben cubrir el espectro completo, NO se concentren en un rango estrecho.
-2. Distribución esperada: ~20% en 0-3, ~40% en 4-6, ~30% en 7-8, solo ~10% en 9-10.
-3. Puntúa cada dimensión de forma independiente: un chiste puede ser gracioso pero poco original, o creativo pero mal conectado a la noticia.
-
-【OBLIGATORIO】Devuelve SOLO JSON puro, sin explicaciones ni markdown:
-{"news_relevance": <num>, "humor": <num>, "creativity": <num>, "naturalness": <num>}"""
+【OBLIGATORIO】Devuelve SOLO JSON puro, sin explicaciones ni bloques markdown:
+{"news_relevance": <num>, "humor": <num>, "creativity": <num>, "conciseness": <num>}"""
     else:
-        return """You are an EXTREMELY STRICT joke quality critic. Rate the given joke on four dimensions (0-10, decimals allowed).
-
-Scoring dimensions and anchors (follow anchors strictly, DO NOT deviate):
+        return """You are a professional joke quality evaluator. Rate the given joke on the following four dimensions (0-10, 0 is lowest, 10 is highest, decimals allowed):
 - news_relevance : How relevant the joke is to the news headline
-  0=completely unrelated / 1=mentions same keywords but no real connection / 3=weak and clumsy relevance / 5=surface-level relevance only / 7=good use of news elements / 9=tightly interwoven
-- humor : How funny the joke is
-  0=no humor at all / 1=attempted humor but total failure / 3=barely qualifies as a joke / 5=mild smile / 7=fairly amusing / 9=very funny, memorable
-- creativity : Originality and creative level
-  0=pure copy / 1=obvious template / 3=slight variation on cliché / 5=somewhat original but predictable / 7=interesting approach / 9=highly novel
-- naturalness : How natural and fluent the joke reads (not forced or over-explained)
-  0=incoherent / 1=doesn't make sense / 3=readable but obviously manufactured / 5=acceptable but feels crafted / 7=fairly natural / 9=extremely smooth
-
-[SCORING DISCIPLINE — MANDATORY]
-1. USE THE FULL 0-10 RANGE. Your scores should span the entire spectrum, NOT cluster in a narrow band.
-2. Expected distribution: ~20% of jokes score 0-3, ~40% score 4-6, ~30% score 7-8, only ~10% score 9-10.
-3. Score each dimension INDEPENDENTLY: a joke can be funny but unoriginal, or creative but poorly connected to the news.
+- humor          : How funny / entertaining the joke is
+- creativity     : Originality and creative level of the joke
+- conciseness    : Conciseness and clarity of expression
 
 [STRICT] Output ONLY pure JSON, no explanation, no markdown fences:
-{"news_relevance": <num>, "humor": <num>, "creativity": <num>, "naturalness": <num>}"""
+{"news_relevance": <num>, "humor": <num>, "creativity": <num>, "conciseness": <num>}"""
 
 
 def evaluate_single_joke(news_headline, joke_text, model_name, lang, rpm_limit):
@@ -389,7 +347,7 @@ def run(output_dir, output_file, base_dir, model_name="gpt-5.5",
                 record["scores"] = res
                 _safe_print(f"  [OK ] {_task_key(task)} -> "
                             f"rel={res['news_relevance']:.1f} hum={res['humor']:.1f} "
-                            f"crt={res['creativity']:.1f} nat={res['naturalness']:.1f}")
+                            f"crt={res['creativity']:.1f} cnc={res['conciseness']:.1f}")
 
             with lock:
                 results.append(record)
@@ -669,95 +627,12 @@ def _run_correlations(overall_per_dim):
     return out
 
 
-def _run_pairwise_analysis(item_group_scores):
-    """配对胜率分析 & 正确排序率。
-
-    item_group_scores: {item_id: {group: [composite_scores]}}
-    每个 item_id 的各质量组得分取均值后进行比较。
-    """
-    out = {
-        "method": "item-level paired comparison (group mean per item)",
-        "win_rates": {},
-        "correct_ordering": {},
-    }
-
-    # 计算每个 item 在各组的均值
-    item_means = {}  # {item_id: {group: mean_score}}
-    for item_id, group_map in item_group_scores.items():
-        item_means[item_id] = {}
-        for g, scores_list in group_map.items():
-            if scores_list:
-                item_means[item_id][g] = sum(scores_list) / len(scores_list)
-
-    # --- 配对胜率 ---
-    pairs = [("high", "low"), ("high", "medium"), ("medium", "low")]
-    for g1, g2 in pairs:
-        wins = 0
-        ties = 0
-        losses = 0
-        total = 0
-        for item_id, means in item_means.items():
-            if g1 in means and g2 in means:
-                total += 1
-                if means[g1] > means[g2]:
-                    wins += 1
-                elif means[g1] == means[g2]:
-                    ties += 1
-                else:
-                    losses += 1
-        key = f"{g1}_vs_{g2}"
-        if total > 0:
-            out["win_rates"][key] = {
-                "total_items": total,
-                "wins": wins,
-                "ties": ties,
-                "losses": losses,
-                "win_rate": round(wins / total, 4),
-                "loss_rate": round(losses / total, 4),
-            }
-
-    # --- 正确排序率：high > medium > low ---
-    correct = 0
-    partial_hl = 0  # high > low 但不完全正确
-    total_three = 0
-    for item_id, means in item_means.items():
-        if "high" in means and "medium" in means and "low" in means:
-            total_three += 1
-            h, m, l = means["high"], means["medium"], means["low"]
-            if h > m > l:
-                correct += 1
-            elif h > l:
-                partial_hl += 1
-
-    if total_three > 0:
-        out["correct_ordering"] = {
-            "total_items_with_all_3_groups": total_three,
-            "fully_correct (H>M>L)": correct,
-            "fully_correct_rate": round(correct / total_three, 4),
-            "partial_correct (H>L)": partial_hl,
-            "partial_correct_rate": round((correct + partial_hl) / total_three, 4),
-        }
-    else:
-        out["correct_ordering"] = {
-            "total_items_with_all_3_groups": 0,
-            "note": "no items have all 3 quality groups",
-        }
-
-    return out
-
-
-def _composite_score(vals_dict):
-    """加权综合分计算"""
-    return sum(vals_dict[d] * COMPOSITE_WEIGHTS[d] for d in SCORE_DIMENSIONS)
-
-
 def generate_summary(results):
-    """生成统计分析：各维度总体 + 分质量组 + 配对胜率 + 正确排序率"""
+    """生成统计分析：各维度总体 + 分质量组 + 整体分数分布"""
     summary = {
         "total_records": len(results),
         "valid_records": 0,
         "error_records": 0,
-        "composite_weights": COMPOSITE_WEIGHTS,
         "overall": {},
         "by_quality_group": {},
         "distribution_of_overall_score": {},
@@ -765,11 +640,8 @@ def generate_summary(results):
 
     overall_per_dim = defaultdict(list)              # {dim: [values]}
     group_per_dim = defaultdict(lambda: defaultdict(list))  # {group: {dim: [values]}}
-    group_composite = defaultdict(list)              # {group: [加权 composite]}
-    overall_scores = []  # 每条笑话的加权综合得分
-
-    # 用于配对分析：{item_id: {group: [composite_scores]}}
-    item_group_scores = defaultdict(lambda: defaultdict(list))
+    group_composite = defaultdict(list)              # {group: [原始 composite]}
+    overall_scores = []  # 每条笑话的四维平均（作为综合得分）
 
     for r in results:
         scores = r.get("scores")
@@ -778,21 +650,18 @@ def generate_summary(results):
             continue
         # 校验维度完整
         try:
-            vals = {d: float(scores[d]) for d in SCORE_DIMENSIONS}
+            vals = [float(scores[d]) for d in SCORE_DIMENSIONS]
         except (KeyError, TypeError, ValueError):
             summary["error_records"] += 1
             continue
         summary["valid_records"] += 1
         g = r.get("quality_group", "unknown")
-        item_id = r.get("item_id", "")
-        for d in SCORE_DIMENSIONS:
-            overall_per_dim[d].append(vals[d])
-            group_per_dim[g][d].append(vals[d])
-        composite_val = _composite_score(vals)
+        for d, v in zip(SCORE_DIMENSIONS, vals):
+            overall_per_dim[d].append(v)
+            group_per_dim[g][d].append(v)
+        composite_val = sum(vals) / len(vals)
         overall_scores.append(composite_val)
         group_composite[g].append(composite_val)
-        if item_id:
-            item_group_scores[item_id][g].append(composite_val)
 
     # 整体各维度统计
     for d in SCORE_DIMENSIONS:
@@ -802,14 +671,13 @@ def generate_summary(results):
     # 分质量组统计
     for g, dim_map in group_per_dim.items():
         block = {}
+        all_vals = []
         for d in SCORE_DIMENSIONS:
             block[d] = _stat_block(dim_map[d])
-        # 组内加权综合分
-        n_items = len(dim_map[SCORE_DIMENSIONS[0]])
-        composite = [
-            sum(dim_map[d][i] * COMPOSITE_WEIGHTS[d] for d in SCORE_DIMENSIONS)
-            for i in range(n_items)
-        ]
+            all_vals.extend(dim_map[d])
+        # 组内综合分
+        composite = [sum(dim_map[d][i] for d in SCORE_DIMENSIONS) / 4
+                     for i in range(len(dim_map[SCORE_DIMENSIONS[0]]))]
         block["composite"] = _stat_block(composite)
         summary["by_quality_group"][g] = block
 
@@ -830,15 +698,14 @@ def generate_summary(results):
             vals = {d: float(scores[d]) for d in SCORE_DIMENSIONS}
         except (KeyError, TypeError, ValueError):
             continue
-        z_vals = {d: (vals[d] - mu[d]) / sigma[d] for d in SCORE_DIMENSIONS}
-        cz = sum(z_vals[d] * COMPOSITE_WEIGHTS[d] for d in SCORE_DIMENSIONS)
+        z_vals = [(vals[d] - mu[d]) / sigma[d] for d in SCORE_DIMENSIONS]
+        cz = sum(z_vals) / len(z_vals)
         g = r.get("quality_group", "unknown")
         composite_z_overall.append(cz)
         group_composite_z[g].append(cz)
 
     summary["overall_zscore"] = {
-        "method": "per-dim z-score (population std) then weighted sum across dims",
-        "weights": COMPOSITE_WEIGHTS,
+        "method": "per-dim z-score (population std) then mean across dims",
         "mu": {d: round(mu[d], 4) for d in SCORE_DIMENSIONS},
         "sigma": {d: round(sigma[d], 4) for d in SCORE_DIMENSIONS},
         "composite_z": _stat_block(composite_z_overall),
@@ -849,18 +716,11 @@ def generate_summary(results):
         if g in summary["by_quality_group"]:
             summary["by_quality_group"][g]["composite_z"] = _stat_block(cz_list)
 
-    # ---------- 配对胜率分析 & 正确排序率 ----------
-    summary["pairwise_analysis"] = _run_pairwise_analysis(item_group_scores)
-
     # ---------- 显著性检验 & 相关性 ----------
     # 原始 composite 的检验（与展示的均值口径一致）
     summary["significance_tests"] = _run_significance(group_per_dim, group_composite)
     # 额外补充：基于 z-composite 的组间检验（仅 composite 行）
-    # 构造一个包含组信息的 group_per_dim，使 _run_significance 不会跳过
-    _z_group_per_dim = defaultdict(lambda: defaultdict(list))
-    for g in group_composite_z:
-        _z_group_per_dim[g]  # 触发 key 创建，确保 not-in 检查通过
-    z_sig = _run_significance(_z_group_per_dim, group_composite_z)
+    z_sig = _run_significance(defaultdict(lambda: defaultdict(list)), group_composite_z)
     summary["significance_tests_zcomposite"] = {
         "method": z_sig.get("method"),
         "p_backend": z_sig.get("p_backend"),
@@ -879,9 +739,6 @@ def print_summary(summary):
     print("数据集评估 - 汇总分析")
     print(f"{'=' * 60}")
     print(f"总记录: {summary['total_records']} | 有效: {summary['valid_records']} | 错误: {summary['error_records']}")
-    weights = summary.get("composite_weights", COMPOSITE_WEIGHTS)
-    w_str = " + ".join(f"{d}*{weights[d]}" for d in SCORE_DIMENSIONS)
-    print(f"综合分公式: {w_str}")
 
     print("\n--- 各维度总体统计 ---")
     dims = SCORE_DIMENSIONS + ["composite"]
@@ -936,26 +793,6 @@ def print_summary(summary):
                 s = summary["by_quality_group"][g].get("composite_z", {})
                 row += f"{str(s.get('mean', '-')):>12}"
             print(row)
-
-    # ---------- 配对胜率分析 ----------
-    pw = summary.get("pairwise_analysis")
-    if pw:
-        wr = pw.get("win_rates", {})
-        if wr:
-            print(f"\n--- 配对胜率分析（每个 item 取组内均分后比较）---")
-            print(f"  {'  组对':<20}{'items':>8}{'wins':>8}{'ties':>8}{'losses':>8}{'win_rate':>12}")
-            for pair_key, data in wr.items():
-                print(f"  {pair_key:<20}{data['total_items']:>8}{data['wins']:>8}"
-                      f"{data['ties']:>8}{data['losses']:>8}{data['win_rate']:>12.1%}")
-
-        co = pw.get("correct_ordering", {})
-        if co and co.get("total_items_with_all_3_groups", 0) > 0:
-            print(f"\n--- 正确排序率（H>M>L）---")
-            print(f"  共有三组数据的 item 数: {co['total_items_with_all_3_groups']}")
-            print(f"  完全正确 (H>M>L): {co.get('fully_correct (H>M>L)', 0)} "
-                  f"(占比 {co.get('fully_correct_rate', 0):.1%})")
-            print(f"  部分正确 (H>L):   {co.get('partial_correct (H>L)', 0)} "
-                  f"(累计占比 {co.get('partial_correct_rate', 0):.1%})")
 
     # ---------- 显著性检验 ----------
     sig = summary.get("significance_tests")

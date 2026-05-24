@@ -3,6 +3,7 @@
 import json
 import os
 import re
+import threading
 import time
 
 import dashscope
@@ -21,7 +22,7 @@ KIMI_BASE_URL = 'https://dashscope.aliyuncs.com/api/v1'
 MULTIMODAL_MODELS = ["kimi-k2.5", "kimi-k2.6", "qwen3.6-27b"]
 
 # 需要使用 OpenAI 兼容 API 调用的模型列表（前缀匹配）
-OPENAI_MODELS = ["gpt-5.4-2026-03-05-high", "gemini-3.1-pro-preview", "gpt-5.5"]
+OPENAI_MODELS = ["gpt-5.4-2026-03-05-high", "gemini-3.1-pro-preview", "gpt-5.5", "gpt-5.4"]
 
 # 需要使用 DeepSeek 官方 OpenAI 兼容 API 调用的模型列表（前缀匹配）
 DEEPSEEK_MODELS = ["deepseek-v4-flash", "deepseek-v4-pro"]
@@ -34,6 +35,10 @@ OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "https://api.zetatechs.com/v1")
 # DeepSeek 官方 API 配置
 DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY", "")
 DEEPSEEK_BASE_URL = "https://api.deepseek.com"
+
+# 多模态调用需要临时修改全局 dashscope.base_http_api_url，对多线程不友好，
+# 使用锁将多模态请求串行化以避免全局状态被其他线程的普通调用污染
+_dashscope_base_url_lock = threading.Lock()
 
 
 # ==================== 辅助函数 ====================
@@ -88,30 +93,42 @@ def call_dashscope_api(system_prompt, user_prompt, model_name="qwen-max",
                 continue
 
             if is_multimodal:
-                original_base_url = getattr(dashscope, 'base_http_api_url', None)
-                dashscope.base_http_api_url = KIMI_BASE_URL
                 combined_prompt = f"{system_prompt}\n\n{user_prompt}" if system_prompt else user_prompt
                 messages = [{"role": "user", "content": [{"text": combined_prompt}]}]
-                extra_body = {"enable_thinking": enable_thinking} if enable_thinking is not None else {}
-                response = dashscope.MultiModalConversation.call(
-                    api_key=dashscope.api_key, model=model_name, messages=messages,
-                    extra_body=extra_body, temperature=temperature, top_p=0.95,
-                    timeout=120
-                )
-                if original_base_url:
-                    dashscope.base_http_api_url = original_base_url
+                mm_kwargs = {
+                    "api_key": dashscope.api_key,
+                    "model": model_name,
+                    "messages": messages,
+                    "temperature": temperature,
+                    "top_p": 0.95,
+                    "timeout": 120,
+                }
+                if enable_thinking is not None:
+                    mm_kwargs["enable_thinking"] = enable_thinking
+                # 串行化多模态调用：避免全局 base_http_api_url 修改破坏其他并发线程
+                with _dashscope_base_url_lock:
+                    original_base_url = getattr(dashscope, 'base_http_api_url', None)
+                    dashscope.base_http_api_url = KIMI_BASE_URL
+                    try:
+                        response = dashscope.MultiModalConversation.call(**mm_kwargs)
+                    finally:
+                        if original_base_url is not None:
+                            dashscope.base_http_api_url = original_base_url
             else:
-                extra_body = {"enable_thinking": enable_thinking} if enable_thinking is not None else {}
-                response = Generation.call(
-                    model=model_name,
-                    messages=[
+                gen_kwargs = {
+                    "model": model_name,
+                    "messages": [
                         {"role": "system", "content": system_prompt},
                         {"role": "user", "content": user_prompt}
                     ],
-                    extra_body=extra_body,
-                    result_format="message", temperature=temperature, top_p=0.95,
-                    timeout=120
-                )
+                    "result_format": "message",
+                    "temperature": temperature,
+                    "top_p": 0.95,
+                    "timeout": 120,
+                }
+                if enable_thinking is not None:
+                    gen_kwargs["enable_thinking"] = enable_thinking
+                response = Generation.call(**gen_kwargs)
 
             if response.status_code == 200:
                 if is_multimodal:
@@ -287,7 +304,12 @@ def call_openai_api(system_prompt, user_prompt, model_name="gpt-4",
                     create_params["extra_body"] = {"enable_thinking": enable_thinking}
             response = client.chat.completions.create(**create_params)
 
-            content = response.choices[0].message.content.strip()
+            raw_content = response.choices[0].message.content
+            if raw_content is None:
+                # 部分思考模型会将思考内容放在 reasoning_content，此时 content 可能为空
+                print(f"    [OpenAI API] 响应 content 为空, model={model_name}")
+                return {"error": "API返回 content 为空", "raw_response": str(response)[:200]}
+            content = raw_content.strip()
             try:
                 return parse_json_response(content)
             except json.JSONDecodeError as e:
